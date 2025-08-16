@@ -19,7 +19,7 @@ def parse_file(file_path):
     with open(file_path) as file:
         file_text = file.read()
 
-    return file_text, get_features(file_text)
+    return get_features(file_text)
 
 
 def list_data():
@@ -30,10 +30,10 @@ def list_data():
 good_files, bad_files = list_data()
 
 good_feature_vectors = np.array([
-    parse_file(file_path)[1] for file_path in good_files
+    parse_file(file_path) for file_path in good_files
 ])
 bad_feature_vectors = np.array([
-    parse_file(file_path)[1] for file_path in bad_files
+    parse_file(file_path) for file_path in bad_files
 ])
 
 all_feature_vectors = np.concatenate([ good_feature_vectors, bad_feature_vectors ])
@@ -43,13 +43,8 @@ stddevs = np.std( all_feature_vectors, axis=0 )
 good_feature_vectors = np.nan_to_num( ( good_feature_vectors - means ) / stddevs )
 bad_feature_vectors = np.nan_to_num( ( bad_feature_vectors - means ) / stddevs )
 
-rng = np.random.default_rng()
-rng.shuffle(good_feature_vectors)
-rng.shuffle(bad_feature_vectors)
-
-holdout = 1
-x = np.concatenate([ good_feature_vectors[:-holdout], bad_feature_vectors[:-holdout] ])
-y = np.array([ *[1 for _ in good_feature_vectors[:-holdout]], *[0 for _ in bad_feature_vectors[:-holdout]] ])
+x = np.concatenate([ good_feature_vectors, bad_feature_vectors ])
+y = np.array([ *[1 for _ in good_feature_vectors], *[0 for _ in bad_feature_vectors] ])
 
 print("fitting model")
 
@@ -61,3 +56,4 @@ print("fitted model")
 
 with open("model.pkl", "wb") as f:
     pickle.dump([means, stddevs, model], f)
+
