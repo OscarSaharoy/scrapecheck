@@ -1,0 +1,130 @@
+
+
+Wikipedia The Free Encyclopedia
+
+    Donate
+    Create account
+    Log in
+
+Contents
+
+    (Top)
+    Usage
+    Related projects
+    References
+    External links
+
+Matplotlib
+
+    Article
+    Talk
+
+    Read
+    Edit
+    View history
+
+Tools
+
+Appearance
+Text
+
+    Small
+    Standard
+    Large
+
+Width
+
+    Standard
+    Wide
+
+Color (beta)
+
+    Automatic
+    Light
+    Dark
+
+From Wikipedia, the free encyclopedia
+Matplotlib
+Screenshot of Matplotlib plots and code
+Original author(s)	John D. Hunter
+Developer(s)	Michael Droettboom, et al.
+Initial release	2003; 22 years ago[1]
+Stable release	
+3.10.3[2] Edit this on Wikidata / 9 May 2025; 3 months ago
+Repository	
+
+    github.com/matplotlib/matplotlib Edit this at Wikidata
+
+Written in	Python
+Engine	Cairo, Anti-Grain Geometry
+Operating system	Cross-platform
+Type	Plotting
+License	Matplotlib license
+Website	matplotlib.org
+
+Matplotlib (portmanteau of MATLAB, plot, and library[3]) is a plotting library for the Python programming language and its numerical mathematics extension NumPy. It provides an object-oriented API for embedding plots into applications using general-purpose GUI toolkits like Tkinter, wxPython, Qt, or GTK. There is also a procedural "pylab" interface based on a state machine (like OpenGL), designed to closely resemble that of MATLAB, though its use is discouraged.[4] SciPy makes use of Matplotlib.
+
+Matplotlib was originally written by John D. Hunter. Since then it has had an active development community[5] and is distributed under a BSD-style license. Michael Droettboom was nominated as matplotlib's lead developer shortly before John Hunter's death in August 2012[6] and was further joined by Thomas Caswell.[7][8] Matplotlib is a NumFOCUS fiscally sponsored project.[9]
+Usage
+
+Matplotlib is used in scientific research as a tool for data visualization. For example, the Event Horizon Telescope collaboration used Matplotlib to produce visualizations during the effort to create the first image of a black hole.[10] Matplotlib also underpins the plotting functionality of many scientific Python libraries (for instance, pandas uses Matplotlib as its default backend for plotting). Its importance to the scientific community has been acknowledged by institutions such as NASA, which in 2024 awarded a grant to support Matplotlib’s continued development as part of an initiative to fund widely used open-source scientific software.[11]
+A scatter plot created in Jupyter Notebook using Matplotlib
+
+In education and data science, Matplotlib is frequently used to teach programming and data visualization. It integrates with Jupyter Notebook, allowing students and instructors to generate inline plots and interactively explore data within a notebook environment.[12] Many educational institutions incorporate Matplotlib into their curricula for teaching STEM concepts,[13] and it is widely featured in tutorials, workshops, and open online courses as a primary plotting library.
+Related projects
+
+    DISLIN
+    GNU Octave
+    Plotly – for interactive, online Matplotlib and Python graphs
+    PLplot – Python bindings available
+    SageMath – uses Matplotlib to draw plots
+
+References
+
+"Copyright Policy".
+"Release 3.10.3". 9 May 2025. Retrieved 27 May 2025.
+"History — Matplotlib 3.9.2 documentation".
+"API Overview". matplotlib.org.
+"Matplotlib github stats". matplotlib.org.
+"Announcing Michael Droettboom as the lead Matplotlib developer". matplotlib.org. Archived from the original on 2020-10-27. Retrieved 2013-04-24.
+"Matplotlib Lead Developer Explains Why He Can't Fix the Docs—But You Can – NumFOCUS". NumFOCUS. 2017-10-05. Retrieved 2018-04-11.
+"Credits – Matplotlib 2.2.2 documentation". matplotlib.org. Retrieved 2018-04-11.
+"NumFOCUS Sponsored Projects". NumFOCUS. Retrieved 2021-10-25.
+"Case Study: First Image of a Black Hole". NumPy. Retrieved 22 April 2025.
+"NASA Funds Open-Source Software Underpinning Scientific Innovation". NASA. Retrieved 22 April 2025.
+"Interactive notebooks: Sharing the code". Nature. 18 September 2018. Retrieved 22 April 2025.
+
+    "Pyplot tutorial". Matplotlib. Retrieved 22 April 2025.
+
+External links
+Wikimedia Commons has media related to Matplotlib.
+
+    Official website
+
+    vte
+
+Scientific software in Python
+
+    NumPy SciPy matplotlib pandas scikit-learn scikit-image MayaVi more
+
+Categories:
+
+    Free plotting softwareFree software programmed in PythonPython (programming language) scientific librariesScience software that uses GTKScience software that uses QtFree data and information visualization software
+
+    This page was last edited on 6 June 2025, at 04:07 (UTC).
+    Text is available under the Creative Commons Attribution-ShareAlike 4.0 License; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.
+
+    Privacy policy
+    About Wikipedia
+    Disclaimers
+    Contact Wikipedia
+    Code of Conduct
+    Developers
+    Statistics
+    Cookie statement
+    Mobile view
+
+    Wikimedia Foundation
+    Powered by MediaWiki
+
+

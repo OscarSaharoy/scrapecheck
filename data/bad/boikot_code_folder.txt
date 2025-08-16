@@ -1,0 +1,89 @@
+
+Skip to content
+Navigation Menu
+boikot-xyz
+boikot
+
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+
+    Settings
+
+Files
+t
+
+ads
+backend
+mcp
+scripts
+
+migrations
+
+inheritfromparent.mjs
+ownedbymany.mjs
+
+    uuid2key.mjs
+
+rustscrape
+README.md
+addRecord.js
+assemble.js
+brander.js
+filter.js
+getRecord.js
+llm.js
+math.js
+package-lock.json
+package.json
+prompts.js
+render.js
+scripts.test.js
+search.js
+testData.js
+
+    wiki.js
+
+site
+.gitignore
+.vercelignore
+LICENSE.txt
+README.md
+boikot.json
+
+    todo.txt
+
+    boikot/scripts
+
+/migrations/
+OscarSaharoy
+OscarSaharoy
+improve inheritfromparent
+cdfcffb
+ · 
+Apr 26, 2024
+Name	Last commit message
+	Last commit date
+..
+inheritfromparent.mjs
+	
+improve inheritfromparent
+	
+Apr 26, 2024
+ownedbymany.mjs
+	
+ownedbymany migration
+	
+Dec 24, 2023
+uuid2key.mjs
+	
+first migration
+	
+Dec 23, 2023
+boikot/scripts/migrations at main · boikot-xyz/boikot
+ 

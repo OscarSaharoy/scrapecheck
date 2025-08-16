@@ -1,0 +1,18 @@
+
+
+Verification Required
+
+The visual verification might not be accessible to you. We recommend you to use the audio verification instead. Important: after clicking play, you will hear 6 digits. Please wait until the audio finishes before typing or interacting with the page.
+No Internet access
+
+Why is this step needed?
+
+We detected unusual activity from your device or network. Reasons may include:
+
+    Rapid taps or clicks
+    JavaScript disabled or not working
+    Automated (bot) activity on your network (IP 45.128.35.183)
+    Use of developer or inspection tools
+
+Need help?
+ID: f12e5a82-46de-ddad-0b26-e33322806584

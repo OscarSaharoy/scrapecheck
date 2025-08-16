@@ -1,0 +1,91 @@
+Privacy
+Skip to main content
+Events
+Video
+Special Issues
+Jobs
+Subscribe
+
+    Artificial Intelligence
+
+Security
+Data Infrastructure
+Automation
+Enterprise Analytics
+More
+
+Hugging Face, GitHub and more unite to defend open source in EU AI legislation
+Sharon Goldman
+@sharongoldman
+July 26, 2023 12:00 AM
+
+Want smarter insights in your inbox? Sign up for our weekly newsletters to get only what matters to enterprise AI, data, and security leaders. Subscribe Now
+
+A coalition of a half-dozen open-source AI stakeholders — Hugging Face, GitHub, EleutherAI, Creative Commons, LAION and Open Future — are calling on EU policymakers to protect open source innovation as they finalize the EU AI Act, which will be the world’s first comprehensive AI law.
+
+In a policy paper released today, “Supporting Open Source and Open Science in the EU AI Act,” the open-source AI leaders offered recommendations “for how to ensure the AI Act works for open source” — with the “aim to ensure that open AI development practices are not confronted with obligations that are structurally impractical to comply with or that would be otherwise counterproductive.”
+
+According to the paper, “overbroad obligations” that favor closed and proprietary AI development — like models from top AI companies such as OpenAI, Anthropic and Google — “threaten to disadvantage the open AI ecosystem.”
+
+The paper was released as the European Commission, Council and Parliament debate the final EU AI Act in what is known as the “trilogue,” which began after the European Parliament passed its version of the bill on June 14. The goal is to finish and pass the AI Act by the end of 2023 before the next European Parliament elections.
+
+AI Scaling Hits Its Limits
+
+Power caps, rising token costs, and inference delays are reshaping enterprise AI. Join our exclusive salon to discover how top teams are:
+
+    Turning energy into a strategic advantage
+    Architecting efficient inference for real throughput gains
+    Unlocking competitive ROI with sustainable AI systems
+
+Secure your spot to stay ahead: https://bit.ly/4mwGngO
+Open-source AI innovation is at stake
+
+Yacine Jernite, ML and society lead at Hugging Face, a popular hub for open-source code and models, told VentureBeat that while the policy paper is detailed, the first main point the coalition wants to make is around innovation. “We think that it is important for people to be able to choose between base models, between components, to mix and match as they need,” he said.
+
+In addition, the coalition seeks to emphasize that open-source AI is necessary — and that regulation should not hinder open-source AI innovation.
+
+“Openness by itself does not guarantee responsible development,” Jernite explained. “But openness and transparency [are] necessary [for] responsible governance — so it is not that openness [should be] exempt from requirements, but requirements should not preclude open development.”
+The EU AI Act is focused on application risk
+
+Since April 2021, when the European Commission proposed the first EU regulatory framework for AI, it has worked to focus on analyzing and classifying AI systems according to the risk they pose to users. The higher the risk level, the more regulation.
+
+Peter Cihon, senior policy manager at GitHub, pointed out that as the EU Council, and subsequently the EU Parliament, developed their drafts of the AI Act, the policymakers began to look up the value chain to see how to mitigate some of these risks at an earlier stage of AI development.
+
+“With that kind of step, we really redoubled our efforts to make sure that they were not inadvertently imposing expectations that might make a lot of sense for companies or well-resourced actors, but would instead place them onto open source developers who are often hobbyists, nonprofits or students,” he told VentureBeat. “Ultimately, policymakers have been quite focused on one particular value chain, one particular model, and that tends to be the API model — but that doesn’t really apply in the context of open source.”
+The ‘Brussels Effect’
+
+Cihon added that he is optimistic that providing clear information about the open-source approach to development will be very useful as the trilogue, which began in June, continues. “The provisions in the sections of the act that we’re talking about have not yet come up for discussion,” he said.
+
+In addition, the EU has historically been a trendsetter when it comes to tech regulation, as it was with the GDPR — in what has become known as the “Brussels Effect.” So policymakers around the world, including in the U.S., are surely taking note.
+
+“It certainly starts the global regulatory conversation,” said Cihon. “So we’re optimistic that this can have benefits in DC and beyond.” In particular, he noted that Senator Chuck Schumer’s announcement of AI-focused “Insight Forums” this fall are “a great opportunity to get more diverse input into the policymaking process than might be traditionally seen, and I’m really hopeful that open source developers will be given a seat at that table.”
+
+
+Daily insights on business use cases with VB Daily
+
+If you want to impress your boss, VB Daily has you covered. We give you the inside scoop on what companies are doing with generative AI, from regulatory shifts to practical deployments, so you can share insights for maximum ROI.
+
+Read our Privacy Policy
+Find Your Place In The World
+BY Amply
+  B2B Outside Sales Optimum Sylva See Job
+  Senior Actuarial Analyst - Remote DW Simpson Chicago See Job
+  Per Diem PET/CT Technologist - MSK Westchester Memorial Sloan Kettering Cancer Center West Harrison See Job
+  Usability Researcher Apex Systems Vancouver See Job
+Search More Roles
+Is AI Growth Draining Your Budget and the Grid?
+
+Inference costs and power limits are forcing teams to rethink how they scale. On Sept 4 in San Francisco, join our invite‑only salon to learn how leaders are cutting costs and emissions with smarter infrastructure.
+Claim Your Spot
+
+    Press Releases
+    Contact Us
+    Advertise
+    Share a News Tip
+    Contribute to DataDecisionMakers
+
+    Privacy Policy
+    Terms of Service
+
+© 2025 VentureBeat. All rights reserved.
+

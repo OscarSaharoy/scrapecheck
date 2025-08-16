@@ -1,0 +1,53 @@
+
+Skip to main content
+Matplotlib
+
+Considering changes to Code of Conduct Response
+Announcements
+Feb 21
+21d ago
+tacaswell
+Feb 21
+
+NumFOCUS (our fiscal sponsor) has adopted a new Code of Conduct and is the process of standing up a Code of Conduct working group and response process. As a currently sponsored project we will have the option to opt-in to the NumFOCUS code of conduct and response process in March 2025. This would replace our current CoC, CoC committee and response processes. If we opt-in, adoption will require changes to our governance
+per our process.
+
+There will be an informational session lead by NumFOCUS Tuesday, March 4th, 8:00 - 9:00 am PST / 16:00 - 17:00 UTC
+(zoom link) for anyone interested.
+
+rcomer
+Feb 22
+
+One thing that strikes me about the new CoC is that it seems to go straight from “don’t be a jerk” to “how to make a formal complaint if someone else is being a jerk”. Are there no interim steps? I have taken the Enforcement Responsibilities section of our current CoC to mean that any one of us with admin/maintainer rights can and should make edits and comments to correct jerkish behaviour as soon as we see it.
+
+Edit: I do agree that having NF take care of the formal process when it’s needed is a good thing.
+
+tacaswell
+Feb 27
+
+It is my understanding that we can/should continue to do that sort of moderation / nudges.
+
+Adding “can we please bring the temperature down in this thread” comment may be far more effective than a formal process in many cases and we should not feel constrained to hide/edit/remove offensive material.
+
+If we delete comments, we should consider raising it to the CoC process (and maybe GH itself for GH comments…if you violate both GH ToS and our CoC we should let GH do their process as well
+
+) as a follow up.
+
+story645
+rcomer
+Feb 28
+
+    Are there no interim steps?
+
+I think this might be worth raising w/ NumFocus.
+
+I generally think of “bring the temperature down” stuff as deescalation to try and prevent someone being a jerk from rising to what I feel would warrant a ‘formal complaint’ but I agree with you that edits and deletions can be a weird gray area (especially when it’s not like outright spam).
+
+story645
+Mar 4
+
+Went to the Q&A today and apparently lots of projects have the same question as @rcomer so NumFocus will discuss internally whether they need more concrete or clearer guidance.
+
+The answer for now is more or less that moderators functionally act as ‘event response team’ members and the process for moderation looks more or less like the event response consequences, which include everything in the enforcement responsibilities section of our CoC.
+
+

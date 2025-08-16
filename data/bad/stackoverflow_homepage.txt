@@ -1,0 +1,152 @@
+Blog
+
+Everything
+Productivity
+Career Advice
+AI/ML
+Open Source
+
+    Business Hub 
+
+Company
+
+    Releases 
+
+Podcast
+
+    Newsletter 
+
+Products
+Stack Overflow for Teams
+Capture, share, & collaborate on knowledge internally.
+Advertising
+Promote your product or service to developers and technologists.
+Talent
+Engage the world’s technology talent with your employer brand.
+Releases
+
+See what we’ve been shipping across all our products. Also follow us on Twitter and LinkedIn to stay updated.
+Latest
+Article hero image
+Better performance, smarter workflows: What’s new in Stack Overflow for Teams
+
+Our July 2025 release focuses on stability, integration, and actionable insight—designed to help your teams stay informed, secure, and efficient as they scale.
+Stack Overflow for Teams API v3
+
+The latest version of the Stack Overflow for Teams API introduces a modern design with improved functionality.
+“Your 2022 Stacked” year in review report
+
+A new feature to help celebrate your team’s contributions and community impact.
+Personal Access Tokens (PATs) for API v2.3
+
+The new personal access token (PAT) replaces the API authentication method that uses secret keys and access tokens.
+
+Unlock the power of your community.
+November 1, 2023
+November 2023 Update: What’s new in Collectives™ on Stack Overflow?
+
+Check out some of the new features and updates we’ve recently added on collectives.
+
+Where developers & technologists share private knowledge with coworkers.
+July 8, 2025
+Better performance, smarter workflows: What’s new in Stack Overflow for Teams
+
+Our July 2025 release focuses on stability, integration, and actionable insight—designed to help your teams stay informed, secure, and efficient as they scale.
+June 18, 2025
+Smarter teams, brighter insights: Stack Overflow for Teams Business summer bundle
+
+Read on to see the latest features coming to Stack Overflow for Teams Business users!
+May 27, 2025
+Strengthening integrations, reliability, and trust: New features for Stack Overflow for Teams
+
+The 2025.4 Stack Overflow for Teams Enterprise (SOE) release is all about helping teams work more seamlessly across tools, departments, and knowledge silos.
+
+Where developers and technologists go to gain and share knowledge.
+June 4, 2024
+Introducing Staging Ground: The private space to get feedback on questions before they’re posted
+
+Learn about the workflow designed to help new askers improve their questions on Stack Overflow.
+February 8, 2024
+Discussions now taking place across all tags on Stack Overflow
+
+Expanding the experiment to create the space for developers to have meaningful conversations about their favorite technologies.
+October 4, 2022
+Meet Saves: the tool to help you organize your favorite content on Stack Overflow 
+
+Learn about our newly designed tool to help make your favorite questions and answers easier to find.
+Stack Overflow for Teams
+Pricing
+Customers
+Our solution
+Integrations
+Features
+Customer Success
+Security
+Return on Investment (ROI)
+
+OverflowAI
+Available on Enterprise.
+
+Try free
+Log in
+Use cases
+Engineers
+Data Scientists
+DevOps & SRE
+Support
+Product Managment
+
+Resources
+Productivity
+AI/ML
+Guides and Insights
+Customer Academy
+
+FAQ
+Help center
+Stack Overflow Advertising
+Why Stack Overflow?
+What to expect
+
+Advertise to developers
+Attract tech talent
+
+Post a job
+Powered by Indeed
+Use cases
+Marketing Teams
+Employer Branding Teams
+DevRel Teams
+Talent Teams
+Technology Teams
+Agencies
+
+Resources
+Product guides & insights
+Community insights
+Advertising best practices
+Talent best practices
+Company
+Knowledge Solutions
+Data licensing offering to build and improve AI tools and models.
+About
+Leadership
+Social Impact
+Press
+Careers
+Open positions
+Contact us
+Partnerships
+
+Blog
+Newsletter
+Podcast
+Labs
+Annual Developer Survey
+Site design / logo © 2025 Stack Exchange Inc.
+Terms
+Privacy policy
+Cookie policy
+Your Privacy Choices
+Go to stackoverflow.com
+

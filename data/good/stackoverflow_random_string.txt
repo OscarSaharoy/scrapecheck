@@ -1,0 +1,1171 @@
+
+site logo
+Skip to main content
+
+Unix & Linux
+
+Home
+Questions
+Unanswered
+AI Assist
+Labs
+Tags
+Chat
+Users
+
+    Companies
+
+Teams
+
+Ask questions, find answers and collaborate at work with Stack Overflow for Teams.
+
+Illustration of upvote icon after it is clicked
+
+How to generate a random string?
+Asked 9 years, 11 months ago
+Modified 4 months ago
+Viewed 768k times
+Report this ad
+660
+
+I would like to generate a random string (e.g. passwords, user names, etc.). It should be possible to specify the needed length (e.g. 13 chars).
+
+What tools can I use?
+
+(For security and privacy reasons, it is preferable that strings are generated off-line, as opposed to online on a website.)
+
+    passwordstringrandom
+
+Share
+Improve this question
+Follow
+edited Sep 26, 2015 at 7:05
+asked Sep 19, 2015 at 8:06
+landroni's user avatar
+landroni
+11.6k1313 gold badges3232 silver badges4949 bronze badges
+
+    2
+    There are already good answers are at AskUbuntu. (I use apg personally.) – 
+    Sparhawk
+    Commented Sep 20, 2015 at 13:07 
+
+3
+@Sparhawk The AskUbuntu question/answers are more about listing tools. Please consider adding an answer here exhibiting how to use apg to generate a random string. – 
+landroni
+Commented Sep 20, 2015 at 15:51
+3
+Be cautious about using random number generation on computers. Some are much less random than they appear, but telling the difference between 'good' and 'bad' random number generation is quite hard. – 
+Sobrique
+Commented Sep 21, 2015 at 11:15
+@Sobrique Excellent point about pseudo-random number generators (e.g. /dev/urandom). Would be nice to have some answers using true random number generators, based on e.g. random.org. – 
+landroni
+Commented Sep 21, 2015 at 11:23
+108
+Joke answer: To generate a truly random string, place a new user in front of Emacs (or Vim) and ask them to exit. ;) – 
+Wildcard
+Commented Oct 30, 2016 at 4:51
+
+Add a comment
+26 Answers
+Sorted by:
+637
+
+My favorite way to do it is by using /dev/urandom together with tr to delete unwanted characters. For instance, to get only digits and letters:
+
+tr -dc A-Za-z0-9 </dev/urandom | head -c 13; echo
+
+Alternatively, to include more characters from the OWASP password special characters list:
+
+tr -dc 'A-Za-z0-9!"#$%&'\''()*+,-./:;<=>?@[\]^_`{|}~' </dev/urandom | head -c 13; echo
+
+If you have some problems with tr complaining about the input, try adding LC_ALL=C like this:
+
+LC_ALL=C tr -dc 'A-Za-z0-9!"#$%&'\''()*+,-./:;<=>?@[\]^_`{|}~' </dev/urandom | head -c 13; echo
+
+tr also has a character class for graphical characters that is a bit more readable. Limiting it to the C locale should produce the same kind of output as the above explicit list of characters:
+
+LC_ALL=C tr -dc '[:graph:]' </dev/urandom | head -c 13; echo
+
+Share
+Improve this answer
+Follow
+edited Nov 12, 2023 at 15:41
+Toby Speight's user avatar
+Toby Speight
+9,27433 gold badges3232 silver badges5353 bronze badges
+answered Sep 19, 2015 at 8:18
+herbert's user avatar
+herbert
+6,83211 gold badge1111 silver badges88 bronze badges
+
+    53
+    Or do this: head /dev/urandom | tr -dc A-Za-z0-9 | head -c10 - This way is more accurate. You get 10 characters that are capitals, lowers, or digits – 
+    Brandin
+    Commented Sep 19, 2015 at 8:47
+    22
+    The first head command might be problematic. It will output the first 10 lines from /dev/urandom, which means it will stop once it has seen the 10th newline. So the length of the output send to the tr command is random. It is possible that there will be less than 13 characters in the output from tr. I haven't computed the probability of this happening, the calculations are a bit tricky. – 
+    kasperd
+    Commented Sep 19, 2015 at 22:40
+    9
+    Better do it like this: <dev/urandom tr -dc "$charset" | head -c "$length" – 
+    Petr Skocik
+    Commented Sep 20, 2015 at 13:06 
+
+    19
+    +1 for the LC_ALL=C workaround. In my case head /dev/urandom | LC_ALL=C tr -dc A-Za-z0-9 | head -c 13) fixed the OSX tr problem just in place. – 
+    Camilo Sampedro
+    Commented Sep 28, 2018 at 10:14
+    30
+    macOS tr by default expects UTF-8 input, but /dev/urandom is not UTF-8 encoded characters but just random bytes, so you will get a tr: Illegal byte sequence error. You can fix this problem by setting the LC_ALL env var to C for the tr command in the pipe. This causes tr to expect arbitrary bytes. – 
+    weibeld
+    Commented Oct 23, 2018 at 9:11
+
+Show 18 more comments
+567
+
+I am using the openssl command, the swiss army knife of cryptography.
+
+openssl rand -base64 12
+
+or
+
+openssl rand -hex 12
+
+Share
+Improve this answer
+Follow
+edited Aug 27, 2016 at 17:29
+answered Aug 27, 2016 at 17:22
+Martin Vegter's user avatar
+Martin Vegter
+5988181 gold badges256256 silver badges445445 bronze badges
+
+    31
+    rand -hex will limit the output to just 16 characters, rather than the 90+ on my keyboard. base64 is better because it's 64 characters, but it's not random (e.g. there are predictable padding patterns, and perhaps some characters appear more often than others). – 
+    Martin Tournoij
+    Commented Aug 27, 2016 at 17:37 
+
+    6
+    @Carpetsmoker: Note that the example openssl rand -base64 12 produces 16 characters of output (because 256 values are mapped to 64). And the hex example produces 24 characters. There's no loss in the case of the hex since it's a simple 1:2 mapping, but there might be a little in the base64 case since padding is used. The radix does not affect the randomness, it's the way one is mapped to another that does. (and the total bit count is much more important). – 
+    Dennis Williamson
+    Commented May 19, 2017 at 20:29
+    21
+    This answer deserves more upvotes. urandom, pwgen, gpw, etc may or may not be available on your system; also in different environments, a policy that works on one may not work on another. It would be a pretty dysfunctional setup to not have openssl. Even better: openssl rand -base64 32 | tr -d /=+ | cut -c -16 That'll give you 32 char minus non-alphanum's and trimmed to 16 char length. Makes it easy to deal with as an admin. Users only have alphanums (which they tend to appreciate). The length is long enough that the removal of special chars don't overly impact the entropy. Golden. – 
+    zentechinc
+    Commented Sep 5, 2017 at 16:34
+    5
+    Note that according to its manual, the openssl rand command is still a pseudo-random generator, therefore not cryptographically secure. This suited my needs, but may not suit the need of all applications, e.g. initializing IV as mentioned in another comment. – 
+    spikyjt
+    Commented Feb 25, 2020 at 15:09
+    20
+    Note that the manual says openssl rand is a cryptographically secure pseudo random number generator (CSPRNG). – 
+    ZoFreX
+    Commented Mar 22, 2021 at 9:51
+
+Show 7 more comments
+219
+
+To generate a random password you can use pwgen:
+
+    pwgen generates random, meaningless but pronounceable passwords. These passwords contain either only lowercase letters, or upper and lower case mixed, or digits thrown in. Uppercase letters and digits are placed in a way that eases remembering their position when memorizing only the word.
+
+Generate 7 passwords of length 13:
+
+geek@liv-inspiron:~$ pwgen 13 7
+Eu7Teadiphaec giepahl3Oyaiy iecoo9Aetaib4 phaiChae6Eivi athoo3igee8Co
+Iphu4ufeDeelo aesoYi2lie9he 
+
+As mentioned in the comments, you can avoid reducing entropy by using the -s argument (i.e. generate more secure, completely random but hard to remember passwords):
+
+geek@liv-inspiron:~$ pwgen -s 13 7
+eAfycrPlM4cYv 4MRXmZmyIVNBp D8y71iqjG7Zq7 FQRHcserl4R8O yRCUtPtV3dsqV
+0vJpp2h0OrgF1 QTp7MKtJyTrjz 
+
+For brew users, see here.
+
+To generate random user names you can use gpw:
+
+    This package generates pronounceable passwords. It uses the statistics of three-letter combinations (trigraphs) taken from whatever dictionaries you feed it.
+
+Generate 7 passwords (user names) of length 13:
+
+geek@liv-inspiron:~$ gpw 7 13
+sreepoidahsas
+risadiestinge
+ntodynesssine
+deodstestress
+natinglumperm
+riasigentspir
+enderiferback
+
+Share
+Improve this answer
+Follow
+edited Aug 4, 2023 at 10:52
+AdminBee's user avatar
+AdminBee
+23.6k2525 gold badges5252 silver badges7676 bronze badges
+answered Sep 19, 2015 at 8:11
+landroni's user avatar
+landroni
+11.6k1313 gold badges3232 silver badges4949 bronze badges
+
+    35
+    +1 for not reinventing the wheel. If you don't want the reduced entropy of the "pronounceable" constraint, simply use pwgen -s. – 
+    Nate Eldredge
+    Commented Sep 19, 2015 at 16:21
+    8
+    Too bad pwgen is not included as part of standard bash release. – 
+    Craig Hicks
+    Commented Jun 6, 2020 at 16:56
+    To relate with herbert's, we can use pwgen -sync pw_len pw_cnt to ensure symbols, capital letters etc are contained. (Notice linux.die.net/man/1/pwgen lacks -r option) What's more, it has larger range than en.wikipedia.org/wiki/Base64. See unix.stackexchange.com/a/618595/568529 for all possible symbols. – 
+    An5Drama
+    Commented Jun 1 at 14:26
+
+Add a comment
+54
+
+Inspired by Pablo Repetto I ended up with this easy to remember solution:
+
+shuf -er -n20  {A..Z} {a..z} {0..9} | tr -d '\n'
+
+-e means the arguments get shuffled (as opposed to STDIN or the contents of a file)
+
+-r allows any character to appear multiple times
+
+-n20 requests a random string with a length of 20 characters
+
+{A..Z} {a..z} {0..9} expands to a list of chars to shuffle
+
+(tr -d '\n' is needed because shuf actually shuffles lines, not chars)
+
+shuf is part of coreutils and widely available or at least been ported.
+Share
+Improve this answer
+Follow
+edited Apr 4 at 15:21
+Alex Ball's user avatar
+Alex Ball
+10544 bronze badges
+answered Oct 29, 2016 at 22:06
+entwicklerseite's user avatar
+entwicklerseite
+64155 silver badges22 bronze badges
+
+    2
+    To run this in fish shell, use bash -c 'shuf -zer -n20  {A..Z} {a..z} {0..9}' – 
+    baldrs
+    Commented Sep 1, 2020 at 13:29
+    2
+    && printf "\n" – 
+    mirekphd
+    Commented Oct 30, 2022 at 9:55
+    Can you make it guarantee at least one selection from each character class? I need to implement the AWS IAM user default password policy. Minimum of three of the following mix of character types: uppercase, lowercase, numbers, and non-alphanumeric character (! @ # $ % ^ & * ( ) _ + - = [ ] { } | '). – 
+    Iain Samuel McLean Elder
+    Commented Nov 8, 2023 at 17:18 
+
+1
+Additional characters can be added by separating with spaces. The AWS IAM version requires some escapes: shuf -er -n20  {A..Z} {a..z} {0..9} \! @ \# \$ % ^ \& \* \( \) _ + - = [ ] { } \| \' | tr -d '\n' && printf "\n" – 
+jwhitlock
+Commented Apr 9, 2024 at 16:03
+
+Add a comment
+46
+
+Here is how, I do it. It generates 10 characters random string. You can optimize it by replacing the "fold", with other string processing tools.
+
+cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 10 | head -n 1
+
+Share
+Improve this answer
+Follow
+answered Sep 20, 2015 at 0:16
+gaurav rajput's user avatar
+gaurav rajput
+72244 silver badges44 bronze badges
+
+    1
+    Note that you also add a newline at the end. To fix that, and optimize by replacing fold -w 10 | head -n 1 with head -c10 – 
+    elomage
+    Commented Apr 7, 2021 at 7:17 
+
+    1
+    I've been using this for years however in macOS Big Sur it breaks with "Input error" – 
+    hyperknot
+    Commented Apr 23, 2021 at 0:19
+    1
+    add LC_ALL as suggested in another answer: cat /dev/urandom | LC_ALL=C tr -dc 'a-zA-Z0-9' | fold -w 10 | head -n 1 – 
+    Ludovic Kuty
+    Commented Aug 18, 2023 at 8:19
+
+Add a comment
+32
+
+To generate password with the highest entropy possible with standard Linux tools that are built into every distribution I use:
+
+< /dev/urandom tr -cd "[:print:]" | head -c 32; echo
+
+This outputs all of the ASCII printable characters - from 32 (space) to 126 (tilde, ~). The password length can be controlled with the head's -c flag. There are also other possible character sets in tr (to not include the space, just characters 33-126, use [:graph:]).
+Share
+Improve this answer
+Follow
+answered Apr 27, 2017 at 22:24
+drws's user avatar
+drws
+43144 silver badges66 bronze badges
+
+    2
+    In what way is this different from the existing answers? Specifically, herbert's comes to mind. – 
+    Fox
+    Commented Apr 27, 2017 at 22:40 
+
+    7
+    @Fox His solution uses hardcoded list of characters, which is not an encouraged programming practice because of code readability, compactness and cleanliness. Also some of the special printable ASCII characters could be interpreted by bash, not to mention the most obvious drawback of his one liner - if maximum entropy is desired, can one be sure that all of the available characters are included in the list? And that there are no duplicates which could possibly alter the tr's behaviour? His answer should be replaced by mine since you asked :) – 
+    drws
+    Commented Apr 29, 2017 at 13:37
+    5
+    Many if not most web sites have restrictions on the characters that can be in a password, so hard-coding '[:print:]' doesn't feel any better to me than hard-coding the OWASP password special character list. I feel that almost every answer here could be improved by using a variable, but that is such a minor change that I'd only suggest an edit – 
+    Fox
+    Commented Apr 29, 2017 at 13:54
+    3
+    < /dev/urandom tr -cd '[:graph:]'| tr  -d '\\' | head -c 32; echo if you dont want ` characters in generated string. ` because is an escape character in many languages causes problems – 
+    mzzzzb
+    Commented Mar 8, 2018 at 14:36
+    2
+    @RyanKrage :graph: already excludes space, so a better solution than :print:. – 
+    Dani_l
+    Commented Feb 16, 2020 at 10:14
+
+Show 1 more comment
+26
+
+Use the xxd command to specify length (via -l), which works both in Linux and macOS.  See the xxd(1) man page or the Linux xxd Command Tutorial for Beginners (with Examples).
+
+xxd -l16 -ps /dev/urandom
+
+Share
+Improve this answer
+Follow
+edited Sep 6, 2022 at 17:32
+G-Man Says 'Reinstate Monica''s user avatar
+G-Man Says 'Reinstate Monica'
+24k2929 gold badges7676 silver badges129129 bronze badges
+answered May 28, 2019 at 0:35
+northtree's user avatar
+northtree
+36133 silver badges33 bronze badges
+
+    1
+    This generates a random hexadecimal string. In a good password we'd like to have 2*26 Latin letters and 10 digits. – 
+    András Aszódi
+    Commented Sep 6, 2022 at 15:00
+    1
+    This is the 5-star answer, neat! – 
+    neevek
+    Commented Apr 21, 2023 at 6:50
+    1
+    xxd: invalid number '/dev/urandom' on Alpine Linux running in docker. Without -s is ok. – 
+    Artem Klevtsov
+    Commented Sep 18, 2023 at 4:09
+
+Add a comment
+19
+
+Depending on the level of randomness you want, you could simply go with bash's (also zsh and ksh, possibly others) builtin $RANDOM variable:
+
+$ echo $RANDOM | tr '[0-9]' '[a-z]'
+bfeci
+$ echo $RANDOM | tr '[0-9]' '[a-z]'
+cijjj
+
+The methods reading directly from /dev/urandom are far simpler, but for the sake of completion, you could also use $RANDOM:
+
+echo $(for((i=1;i<=13;i++)); do printf '%s' "${RANDOM:0:1}"; done) | tr '[0-9]' '[a-z]'
+
+Important: this solution will only produce random strings using the first 10 letters of the alphabet. Whether or not that is enough for you depends on what you need this for.
+Share
+Improve this answer
+Follow
+edited May 8, 2019 at 11:30
+answered Sep 19, 2015 at 13:08
+terdon's user avatar
+terdon♦
+252k6969 gold badges477477 silver badges714714 bronze badges
+
+    How do you control the length of the generated string? – 
+    landroni
+    Commented Sep 19, 2015 at 13:33
+    2
+    @landroni I don't think you can short of using a loop until you get the right length. $RANDOM will print a number between 0 and 32767. – 
+    terdon
+    ♦
+    Commented Sep 19, 2015 at 13:36
+    I've tried running the command some 20 times, and I can never get anything longer than 4-5 chars... – 
+    landroni
+    Commented Sep 19, 2015 at 13:38
+    2
+    @landroni thanks, I've added a way to specify length but it's not very good. I'd just use something like rand=$(head -c 100 /dev/urandom | tr -dc A-Za-z0-9 | head -c13) instead. – 
+    terdon
+    ♦
+    Commented Sep 19, 2015 at 16:12
+    1
+    @SkippyleGrandGourou very good point. I added this to the answer, thanks. – 
+    terdon
+    ♦
+    Commented May 8, 2019 at 11:30
+
+Show 6 more comments
+14
+
+I use:
+
+base64 < /dev/urandom | tr -d 'O0Il1+/' | head -c 44; printf '\n'
+
+This gives me 57 possible characters. The string can be copy-pasted (removed + and /) or printed and retyped as the difficult to distinguish characters (I1lO0) have been removed.
+
+    44 characters gives me: log2(5744) > 256.64 bits of entropy
+    22 characters gives me: log2(5722) > 128.32 bits of entropy
+
+I like this because:
+
+    the command is simple to type and memorable
+    it uses standard system tools - no extra binaries
+    doesn't "waste" much randomness (uses 89% of the random bits it receives vs ~24% for solutions directly piping to tr)
+    22 and 44 characters pair quite nicely (just above even) common power of two breakpoints
+    the output can be easily selected and pasted or printed and retyped with minimal human error rates
+    shorter than hex encoded (32 and 64 instead of 22 and 44) solutions such as md5sum/sha1sum, etc.
+
+Credit to https://unix.stackexchange.com/a/230676/9583 and especially the comments for my initial inspiration.
+Share
+Improve this answer
+Follow
+edited Feb 6, 2024 at 0:15
+answered Oct 17, 2018 at 21:12
+Iiridayn's user avatar
+Iiridayn
+36933 silver badges1313 bronze badges
+
+    If you need numbers/special characters - typically there will be a number, if not you can safely append 1 without reducing entropy (while generating a new one to get one w/a number does reduce entropy). You can also safely append a ! without reducing entropy. Neither scheme increases entropy worth anything either, but could bring the generated string into compliance with older password requirements. – 
+    Iiridayn
+    Commented Oct 17, 2018 at 21:28
+    1
+    And it works on macOS! – 
+    Micah Henning
+    Commented May 2, 2020 at 2:56
+
+Add a comment
+12
+
+APG is included by default on some Linux distributions.
+
+To generate passwords from size 5 to 10 in subsets Special, Numeric, Capital and Lower, the command is:
+
+apg -MSNCL -m 5 -x 10
+
+And returns
+
+@OpVeyhym9
+3:Glul
+3DroomIc?
+hed&Os0
+NefIj%Ob3
+35Quok}
+
+As said by @landroni in comment.
+Share
+Improve this answer
+Follow
+edited Feb 20, 2019 at 10:47
+Community's user avatar
+CommunityBot
+1
+answered Jan 22, 2017 at 15:24
+Sandburg's user avatar
+Sandburg
+35933 silver badges1313 bronze badges
+
+    1
+    Here are the options to generate random 14 letter passwords containing lots of special characters: apg -a1 -m14 – 
+    neuhaus
+    Commented Nov 11, 2017 at 19:10
+    Generate single password: apg -MSNCL -n 1 -m 5 -x 10 – 
+    burtsevyg
+    Commented May 26, 2023 at 17:07 
+
+    See apg's complete special character set. – 
+    Iain Samuel McLean Elder
+    Commented Nov 8, 2023 at 18:31
+
+Add a comment
+6
+
+@Brandin explained in a comment to another answer how to get at most 100 bytes from /dev/urandom using head -c 100. Another way to do this is with dd:
+
+tr -dc A-Za-z0-9 < /dev/urandom | dd bs=100 count=1 2>/dev/null
+
+The 2>/dev/null at the end of the dd command is to suppress the "... records in / ... records out" output.
+
+I'm not aware of any substantial advantages/disadvantages between these two methods.
+
+I had an issue with both methods of tr complaining about the input. I thought this was because it didn't like receiving binary input, and hence suggested first filtering /dev/random with iconv -c -t US. However, Gilles suggested a different diagnosis and solution, which works for me:
+
+LC_ALL=C tr -dc A-Za-z0-9 </dev/urandom | dd bs=100 count=1 2>/dev/null
+
+Share
+Improve this answer
+Follow
+edited Sep 20, 2015 at 12:54
+answered Sep 19, 2015 at 9:18
+dubiousjim's user avatar
+dubiousjim
+2,7282020 silver badges2727 bronze badges
+
+    For some reason the iconv solution maxes one CPU core and doesn't yield an output (I waited some 10s before killing it)... – 
+    landroni
+    Commented Sep 19, 2015 at 9:38
+    On my Ubuntu 14.04 system iconv is provided by libc-bin 2.19. I'm not sure if it's the same iconv... – 
+    landroni
+    Commented Sep 19, 2015 at 13:36
+    tr supports binary input. However a range like A-Z may be influenced by locale settings. Try LC_ALL=C tr … – 
+    Gilles 'SO- stop being evil'
+    Commented Sep 19, 2015 at 20:27
+    1
+    @Gilles According to the POSIX spec it doesn't "support binary input". Only GNU tr does because it doesn't support multibyte at all (e.g. last time I checked it changing case was implemented by simply setting the sixth bit of every byte). Other systems (e.g. BSD) do support multibyte and this will fail there since the chance that a random input stream is also a valid multibyte stream is very small in most encodings. GNU may add multibyte support at any given moment, at which point this will fail. Of course, setting LC_ALL=C will fix that. – 
+    Martin Tournoij
+    Commented Aug 27, 2016 at 17:33
+    @Carpetsmoker POSIX does require tr to process binary input (in the C locale). (Well, ok, it only says explicitly that null bytes are to be supported, it doesn't say that non-empty files not ending with a newline character are to be supported, but in practice that's always the case as well.) – 
+    Gilles 'SO- stop being evil'
+    Commented Aug 27, 2016 at 17:57
+
+Show 1 more comment
+6
+
+You can use one of md5 tools that has precisely this purpose. In the case of creating a completely random password you can use the md5pass. It is a very simple tool to use and very helpful, since you can use "normal text" together with a "salt" to jump-bit construction of the same password that you can recover afterwards, or alternatively you may want to get a completely random password all the time. The general usage is:
+
+md5pass [password] [salt]
+
+where password is a chosen word that will be used for the construction of the random string and salt is the jump in bytes to be used. Like this:
+
+md5pass word
+
+$1$.MUittVW$j.XDTF1QRnxqFdXRUiSLs0
+
+This will create a "a random sequence" password for you to use. If you use no salt, then you may not be able to recreate this same string afterwards.
+
+However if you use a salt like this:
+
+md5pass word 512
+
+$1$512$.0jcLPQ83jgszaPT8xzds0
+
+then you can create a sequence which you can recover if you use the word in conjunction with the same salt (or jump) if it was originally defined.
+Share
+Improve this answer
+Follow
+edited Sep 26, 2015 at 8:49
+landroni's user avatar
+landroni
+11.6k1313 gold badges3232 silver badges4949 bronze badges
+answered Sep 25, 2015 at 19:24
+Joke Sr. OK's user avatar
+Joke Sr. OK
+90311 gold badge88 silver badges1111 bronze badges
+
+    When a salt is being used, this sounds similar to the PasswordMaker approach... – 
+    landroni
+    Commented Sep 26, 2015 at 8:20 
+
+-Yes May sound similar to one maker password, but the difference is that it is not a commercial program or anything, because the set of md5 tools, "md5pass, md5sum, md5sum.textutils" dealt with here are concerned and are available the system at no cost some !!! – 
+Joke Sr. OK
+Commented Sep 26, 2015 at 13:17
+I actually had in mind PasswordMaker, which is also open-source and non-commercial. – 
+landroni
+Commented Sep 26, 2015 at 16:43
+
+    If you don't have (or like) md5pass, a very similar idea also works with openssl: openssl passwd <BLABLA>, where <BLABLA> is an arbitrary string. This command just generates a hash of that string using the crypt algorithm by default. Old-fashioned, no high security, but for quick-and-dirty applications (like temporary accounts) may be acceptable. – 
+    András Aszódi
+    Commented Jan 29, 2021 at 16:24
+
+Add a comment
+6
+
+These two commands generate random passwords and passphrases, respectively.
+
+shuf --random-source=/dev/urandom --repeat --head-count=20 file_with_characters | tr --delete '\n'
+
+shuf --random-source=/dev/urandom --repeat --head-count=7 file_with_words | tr '\n' ' '
+
+The password generator requires a file_with_characters containing all the characters you want the password to use, one character per line, and exactly one time each. The file must not contain blank lines, and lines must be newline-terminated.
+
+The passphrase generator requires a file_with_words containing all the words you want the passphrase to use, one word per line, and exactly one time each. The file must not contain blank lines, and lines must be newline-terminated.
+
+The --head-count option specifies the length of the password--in characters--or passphrase--in words.
+Share
+Improve this answer
+Follow
+answered Aug 27, 2016 at 16:47
+Pablo Repetto's user avatar
+Pablo Repetto
+6111 silver badge11 bronze badge
+Add a comment
+6
+
+I've found that piping /dev/urandom to tr on macOS didn't work. Here's another way:
+
+set="abcdefghijklmonpqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+n=6
+rand=""
+for i in `seq 1 $n`; do
+    char=${set:$RANDOM % ${#set}:1}
+    rand+=$char
+done
+echo $rand
+
+Share
+Improve this answer
+Follow
+answered Jul 18, 2018 at 21:59
+Jake's user avatar
+Jake
+25122 silver badges77 bronze badges
+
+    Check the last example of my answer. It does not use tr. unix.stackexchange.com/a/494931/203075 – 
+    Zibri
+    Commented Jan 17, 2019 at 11:18
+
+Add a comment
+4
+
+I would like to contribute my usual command to generate a password
+
+$ cat /dev/urandom | base64 | head -n 1 |tr -dc '[:alnum:]' |cut -c -13
+b0R55751vWW9V
+
+To configure the length of the password, change the number in the cut command to the length that you require, for example, 24 character
+
+$ cat /dev/urandom | base64 | head -n 1 |tr -dc '[:alnum:]' |cut -c -24
+WFBhVHuKbrnRhd5kdWXPzmZG
+
+Don't want confusing 0 or O, 1 or l? Filter it out with another tr
+
+$ cat /dev/urandom | base64 | head -n 1 |tr -dc '[:alnum:]' | tr -d '0O1l'|cut -c -24
+JuCphwvhrhppD9wVqfpP2beG
+
+I personally never prefer special character in password, that is why I only choose [:alnum:] for my password generator
+Share
+Improve this answer
+Follow
+edited Feb 26, 2019 at 16:01
+answered Dec 1, 2018 at 3:35
+Sharuzzaman Ahmat Raslan's user avatar
+Sharuzzaman Ahmat Raslan
+27622 silver badges1111 bronze badges
+
+    urandom → base64 has already been given as an answer. And, in fact, that previous answer also included removing ‘O’, ‘0’, ‘I’, ‘l’ and ‘1’. And why do you need both head and cut? – 
+    G-Man Says 'Reinstate Monica'
+    Commented Sep 6, 2022 at 20:43
+
+Add a comment
+3
+
+pwgen, as everyone else has said, for passwords.
+
+Lowercase only, secure, at least 1 number, 8 characters, 1 result
+
+$ pwgen -snA 8 1
+d14o5wgh
+
+Same, but at least 1 uppercase
+
+$ pwgen -csn 8 1
+bMxDxcr4
+
+A diceware cli for usernames, and passwords if you want, for something a little more recollection friendly; I use the pip package diceware, which is fine for my needs.
+
+3 words and 2 symbols
+
+$ diceware -n3 -s2
+DemandingWhimsical*a1iar
+
+I am sure there are at least 100 more, of which 74% are written in nodejs, because, uh.. well that's what they do. Whichever you do decide upon, I would prioritize built-in upcase/downcase, because you will have those contraints at some point, and performing either of those is annoyingly long in posix shell.
+
+cheers
+Share
+Improve this answer
+Follow
+edited Oct 1, 2021 at 12:31
+answered Jan 11, 2021 at 3:28
+christian elsee's user avatar
+christian elsee
+42844 silver badges88 bronze badges
+Add a comment
+3
+
+I got my way with grep:
+
+grep -ao '[!-~]' < /dev/urandom | head -32 | tr -d '\n' ; echo ""
+
+Without special characters:
+
+grep -ao '[A-Za-z0-9]' < /dev/urandom | head -32 | tr -d '\n' ; echo ""
+
+head defines the length of the string.
+Share
+Improve this answer
+Follow
+edited Feb 8, 2022 at 16:02
+answered Feb 8, 2022 at 13:43
+Matheus Garcia's user avatar
+Matheus Garcia
+4911 silver badge22 bronze badges
+
+    If using [T]csh, the exclamation mark must be escaped: '[\!-~]' – 
+    Matheus Garcia
+    Commented Feb 8, 2022 at 15:27
+
+Add a comment
+2
+
+The Unix philosophy of "many small tools that do one thing well" serves you very well in this case.
+
+    /dev/urandom is a stream of random "bytes" (which include non-printable characters)
+    base64 encodes byte data into [A-Za-z0-9/+] (which is entirely printable)
+    dd copies input to output applying modifiers given as arguments (which can include block size and block count)
+
+OSX
+
+base64     < /dev/urandom | dd bs=1k count=1
+
+Linux
+
+base64 -w0 < /dev/urandom | dd bs=1k count=1
+
+Notes:
+
+    If you need a subset of the characters, you can insert a modifier in the pipe.
+        Ex: tr -d '[A-Z/+]' to get rid of capital letters and + and /
+    You can set the bs (block size) to whatever length you need.
+    On Linux, base64 wraps to 76 columns by default and must be reset with -w0 unless you want that.
+
+Share
+Improve this answer
+Follow
+answered Jan 25, 2019 at 18:25
+Bruno Bronosky's user avatar
+Bruno Bronosky
+5,01422 gold badges3030 silver badges2727 bronze badges
+Add a comment
+2
+
+Only using head y md5sum to generate hex passwords of length 22:
+
+ head -c 2048 /dev/urandom | md5sum | head -c 22 ; echo
+
+Ultra secure? Maybe not. Easy? Yes.
+Share
+Improve this answer
+Follow
+answered Oct 25, 2022 at 3:56
+Fjor's user avatar
+Fjor
+21511 silver badge44 bronze badges
+
+    log2(16^22) isn't bad - 88 bits of entropy. I'd not use it for directly encrypting anything (encryption keys should generally be over 100 bits to protect until 2050 - see keylength.com), but for interactive authentication it should be more than long enough (see "Passwords and Cryptwords: The Final Limits on Lengths" 3.1 for an analysis.) – 
+    Iiridayn
+    Commented Jun 24, 2024 at 21:04
+
+Add a comment
+1
+
+I maintain secpwgen in Alpine Linux & keep the sources on my Github.
+
+It can produce random strings or diceware phrases:
+
+musl64 [~]$ secpwgen
+USAGE: secpwgen <-p[e] | -A[adhsy] | -r | -s[e]> N
+
+PASSPHRASE of N words from Diceware dictionary
+  -p    generate passphrase
+  -pe   generate enhanced (with symbols) passphrase
+
+SKEY PASSWORD of N words from S/Key dictionary
+  -s    generate passphrase
+  -se   generate enhanced (with symbols) passphrase
+
+ASCII RANDOM of N elements (at least one option MUST be present)
+  -A    Each letter adds the following random elements in output:
+    a    alphanumeric characters
+    d    decimal digits
+    h    hexadecimal digits
+    s    special characters
+    y    3-4 letter syllables
+
+RAW RANDOM
+  -r    output BASE64 encoded string of N random BITS
+  -k    output koremutake encoding of N random BITS
+
+To generate a 13 character random string you would use:
+
+musl64 [~]$ secpwgen -Aas 13
+----------------
+WK5#*V<]M3<CU ;ENTROPY=67.21 bits
+----------------
+INFO: destroying random number generator.
+INFO: zeroing memory.
+
+musl64 [~]$ secpwgen -Aa 13
+----------------
+GP0FIEBM9Y3BT ;ENTROPY=67.21 bits
+----------------
+INFO: destroying random number generator.
+INFO: zeroing memory.
+
+For users to remember a password use the diceware phrases:
+
+musl64 [~]$ secpwgen -p 5
+----------------
+wq seen list n8 kerr  ;ENTROPY=65.00 bits
+----------------
+INFO: destroying random number generator.
+INFO: zeroing memory.
+
+I personally like:
+
+musl64 [~]$ secpwgen -r 512
+----------------
+h62lL7G4gwh3/j9c7YteQvVXoqJrQKKPWVR3Lt7az36DcfWZWtUgBT19iwmJBwP4UahNzPe7qYD7OcklUFpCzQ== ;ENTROPY=512.00 bits
+----------------
+INFO: destroying random number generator.
+INFO: zeroing memory.
+
+Share
+Improve this answer
+Follow
+answered Apr 7, 2017 at 3:14
+Stuart Cardall's user avatar
+Stuart Cardall
+2,13211 gold badge2020 silver badges1616 bronze badges
+Add a comment
+1
+
+None of the answers so far are truly cross-OS.
+
+The main flaws are represented by the locale definition (MacOS case) and tr being unable to recognize intervals of characters (Solaris case).
+
+You should try shlibs. It's fresh and truly cross-OS. The code to get a random string is shlibs str005 (./shlibs str005).
+
+Get a random string of 50 chars, include puntuation, exclude numbers:
+
+shlibs str005 50 -p -xd
+
+Share
+Improve this answer
+Follow
+edited Mar 17, 2020 at 8:50
+answered Mar 7, 2020 at 13:10
+Nicolae Iotu's user avatar
+Nicolae Iotu
+11155 bronze badges
+Add a comment
+1
+
+With a short bash script:
+
+len=20
+arr=( {33..126} ) arrcount=${#arr[@]}
+for ((i=0; i<len; i++)); do
+    printf \\$(printf '%03o' ${arr[RANDOM%arrcount]})
+done; echo
+
+If you prefer without specials characters, use:
+
+arr=( {48..57} {65..90} {97..122} )
+
+This is ascii decimal codes ranges, see man ascii
+Share
+Improve this answer
+Follow
+answered Oct 25, 2022 at 4:39
+Gilles Quénot's user avatar
+Gilles Quénot
+36.2k77 gold badges7474 silver badges9494 bronze badges
+Add a comment
+0
+
+My way for a very secure password (where 16 is the pw length):
+
+cat /dev/urandom | tr -cd [:graph:]|head -c 16
+
+Example result:
+
+jT@s_Nx]gH<wL~W}
+
+Or alternatively, to generate multiple passwords:
+
+cat /dev/urandom | tr -cd [:graph:]|fold -w 16|head -6
+
+Example result:
+
+7ck%G7'|f&}_8(]s
+<?*]E.CG[NB'gK#A
+:tF-WPTOa3!i7S(h
+2xy(>=%3=Kb1B$`6
+*98Lf{d?Jzb}6q1\
+E7uCEAN2Hz]]y|5*
+
+Little less secure (smaller character set):
+
+cat /dev/urandom |base64 -w 0|fold -w 16|head -6
+
+Example result:
+
+rJqYxYZLOTV+A45w
+PUKQ+BoBf6yfZw5m
++LRfpsN9CsLRiN8V
+yMS6zDpL6NHmG17s
+yTUWPG7Rum97schi
+cognvjVwaKaAyPRK
+
+Share
+Improve this answer
+Follow
+edited Jan 17, 2019 at 11:21
+answered Jan 16, 2019 at 21:59
+Zibri's user avatar
+Zibri
+60277 silver badges99 bronze badges
+
+    cat /dev/urandom | tr has already been given as an answer multiple times — including one that uses [:graph:].  urandom → base64 has also already been given. – 
+    G-Man Says 'Reinstate Monica'
+    Commented Sep 6, 2022 at 20:43
+
+Add a comment
+0
+
+For lengths between 1 and 32, you can use uuidgen from libuuid or util-linux, simply replacing <LENGTH> below:
+
+uuidgen -r | tr -d '-' | head -c <LENGTH>
+
+# or
+
+random=$(uuidgen -r | tr -d '-') && echo "${random:0:<LENGTH>}"
+
+Note: 6–7 of 128 bits are pre-determined and fixed.
+Share
+Improve this answer
+Follow
+answered Oct 2, 2021 at 2:18
+caw's user avatar
+caw
+3199 bronze badges
+Add a comment
+0
+
+This answer is similar to the /dev/urandom method but using openssl rand.
+
+Generate random bytes large enough such that after filtering down to the desired characters, you still meet the required length.
+
+Here, I generate 1000 random bytes for 10 alphanumeric characters a-zA-Z0-9:
+
+LC_ALL=C tr -dc a-zA-Z0-9 < <(openssl rand 1000) | head -c10
+
+Note that the above uses process substitution <(...). If your shell doesn't support it, you can create a temporary file:
+
+openssl rand 1000 > random.tmp
+LC_ALL=C tr -dc a-zA-Z0-9 < random.tmp | head -c10
+
+Share
+Improve this answer
+Follow
+answered Feb 1, 2023 at 14:27
+remykarem's user avatar
+remykarem
+10122 bronze badges
+Add a comment
+0
+
+A simple Bash function based on answer by @Gilles Quénot, which utilizes Bash's SRANDOM and grep's option -P for Perl Compatible Regular Expressions.
+Usage
+
+randString;
+# 4csibIlydNZxJGhV4cRWaeXvGC2XzVUUm58CJfDO1aUTELpA6c7X2YE2oBiosi99
+
+randString 32;
+# C1BIyf8TyxltBDKS207C8SOEjjfZDW1E
+
+randString 48 '[abcd]{2}$';
+# jsnVQpNDgfLy9BboryXmQYjxcSOh3YFWk6Xae3yxRdKrh6dc
+
+Source
+
+randString()
+(
+    declare -r -- __length="${1-64}" __regex="$2";
+    shift 2;
+
+    declare -r -- c=(  
+        {48..57}   # 0-9
+        {65..90}   # A-Z
+        {97..122}  # a-z
+        # {33..47}   # !"#$%&'()*+,-./
+        # {58..64}   # :;<=>?@
+        # {91..96}   # [\]^_`
+        # {123..126} # {|}~
+    );
+
+    declare -r -- cc="${#c[@]}";
+    declare r='' i;
+
+    while [[ "$r" == '' ]] || ! printf '%s' "$r" | grep -P -- "$__regex";
+    do
+        r='';
+
+        for (( i=0; i < __length; i++ ));
+        do
+            declare h; h="$( printf -- '%x' "${c[RANDOM%cc]}"; )";
+            printf -v t -- "\\x${h}";
+            r+="$t";
+        done
+    done
+)
+
+Share
+Improve this answer
+Follow
+edited Dec 16, 2024 at 16:41
+answered Sep 24, 2023 at 1:22
+Serious Angel's user avatar
+Serious Angel
+56122 gold badges77 silver badges1818 bronze badges
+Add a comment
+You must log in to answer this question.
+Protected question. To answer this question, you need to have at least 10 reputation on this site (not counting the association bonus). The reputation requirement helps protect this question from spam and non-answer activity.
+
+Start asking to get answers
+
+Find the answer to your question by asking.
+
+Explore related questions
+
+    passwordstringrandom
+
+See similar questions with these tags.
+
+    The Overflow Blog
+
+Python: Come for the language, stay for the community
+
+    AI isn’t stealing your job, it’s helping you find it
+    Featured on Meta
+    Will you help build our new visual identity?
+    Upcoming initiatives on Stack Overflow and across the Stack Exchange network...
+
+Report this ad
+Report this ad
+Linked
+45
+One-liner to generate an easily memorable password?
+31
+How to create strong passwords in Linux?
+4
+Using sed to replace "A" with a "B" or "C"
+0
+Help with pwgen syntax
+-2
+Generate strings from regular expression in bash
+0
+How to create a random complex password in SuSe 12
+Related
+1
+How to generate random IP addresses
+14
+A consistent and safe approach to passwordless accounts with SSH
+2
+How to generate a random string in a profile alias?
+1
+Generate unique numbers RANDOM function OS X
+28
+Using /dev/random, /dev/urandom to generate random data
+12
+Bash: How to generate random float number using $RANDOM
+1
+Generate random password with special characters on Solaris
+0
+How to create a random complex password in SuSe 12
+4
+How Does Linux Generate Random Numbers on Startup
+2
+How to generate random master password?
+Hot Network Questions
+
+    What's the difference between democracy and totalitarianism if, even in democracy, we must respect laws set by parties we didn't vote for?
+    Difference in attitudes towards bitochen and hishtadlus when it comes to Ruchnius
+    Why isn't gauge symmetry a symmetry while global symmetry is?
+    Can macOS report the capabilities of an attached USB C cable?
+    Why are Zener diodes connected in parallel with the load?
+    Why does my HDD keep spinning and seeking when I power off the computer?
+    Cox-generated estimated survival curves stratification variable
+    Would there be any notable physiological effects of 24/7 artificial light exposure on children?
+    AB Amplifier driving a transformer looking like a short?
+    Can metal atoms act as ligands?
+    Why did the Yemenites curse Ezra haSofer?
+    In Ephesians 1:20–21, what does ‘age to come’ (aiōn mellōn) mean in the Jewish two-age framework?
+    What is the name of the following moral theory?
+    How to define paired-delimiter macros with an optional, symmetrical, horizontal spacing argument using the mathtools package?
+    Shell (.exp) script only sending 1 of 2 files
+    Outside diameter of 1/2 inch PVC connectors
+    How to defend against GDPR being used to access anti-fraud measures?
+    Why does the direction of the gradient vector depend only on the tangent vector to the contour and not the nature of the function itself?
+    Grid Result Scroll Bars in SSMS 21
+    How to find device name of boot drive
+    A film about a boy with werewolf powers who fights the devil at the end
+    Formality regarding abbreviation. Is "GM foods" less formal than "genetically modified foods"?
+    Did recently killed Al Jazeera journalist Anas al-Sharif call the Oct 7 attackers "heroes"?
+    Why am I experiencing these problems updating LibreOffice?
+
+Question feed
+
+Unix & Linux
+
+    Tour
+    Help
+    Chat
+    Contact
+    Feedback
+
+Company
+
+    Stack Overflow
+    Teams
+    Advertising
+    Talent
+    About
+    Press
+    Legal
+    Privacy Policy
+    Terms of Service
+    Cookie Settings
+    Cookie Policy
+
+Stack Exchange Network
+
+    Technology
+    Culture & recreation
+    Life & arts
+    Science
+    Professional
+    Business
+    API
+    Data
+
+    Blog
+    Facebook
+    Twitter
+    LinkedIn
+    Instagram
+
+Site design / logo © 2025 Stack Exchange Inc; user contributions licensed under CC BY-SA . rev 2025.8.11.32701
+Linux is a registered trademark of Linus Torvalds. UNIX is a registered trademark of The Open Group.
+This site is not affiliated with Linus Torvalds or The Open Group in any way.
+

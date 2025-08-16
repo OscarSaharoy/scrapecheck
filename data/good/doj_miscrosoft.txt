@@ -1,0 +1,650 @@
+
+Skip to main content
+
+An official website of the United States government
+DOJ Logo ATR 2
+Utilities
+
+    Our Offices Find Help Contact Us 
+
+Search
+
+Report Violations
+Upcoming Hearings and Trials
+
+    Antitrust FOIA
+    En español
+
+Breadcrumb
+
+    Justice.gov Antitrust Division U.S. V. Microsoft: Proposed Findings Of Fact 
+
+U.S. V. Microsoft: Proposed Findings Of Fact
+
+I. Background
+
+1. On May 18, 1998, plaintiffs the United States and twenty States and the District of Columbia filed actions against defendant Microsoft Corporation, alleging violations of the Sherman Act, 15 U.S.C. §§ 1 & 2, and the antitrust and consumer protection laws of the respective plaintiff States. The actions were consolidated, and expedited discovery ensued. Trial began on October 18, 1998, and concluded on June 26, 1999.
+
+2. Defendant Microsoft Corporation ("Microsoft") is a corporation organized under the laws of the State of Washington with its headquarters in Redmond, Washington.
+
+    Answer ¶ 41.
+
+3. Microsoft's principal business is the licensing of computer software, which it conducts on a world-wide basis. Microsoft licenses computer software throughout the United States and elsewhere and delivers operating systems to computer manufacturers and others across states lines and international borders, and its business has had a substantial effect on interstate commerce.
+
+    Answer ¶ 5.
+
+4. Microsoft, among other things, licenses operating system and application software for personal computers. The personal computer industry, which has seen tremendous growth over the last decade, is an important, robust sector of the United States economy. Microsoft software dominates critical sectors of that industry.
+
+    See infra Part II (Microsoft possess monopoly power in operating systems).
+    Tevanian Dir. ¶¶ 6, 14, 22, 35 (Microsoft is also dominant in a number of applications, including office productivity suites).
+
+5. A Personal Computer ("PC") is a computer designed for use by one person at a time.
+
+    Microsoft Press Computer Dictionary, at 361 (3d ed. 1997) (GX 1050).
+
+5.1 PCs (which include both desktop and laptop models), can be distinguished from more powerful, more expensive computers known as Servers, which are designed to provide services and functionality to multiple users, either in local area network or over the Internet.
+
+    Warren-Boulton Dir. ¶ 20.
+    Microsoft Press Computer Dictionary, at 430 (3d ed. 1997) (GX 1050).
+
+5.2 A typical PC system consists of a number of components, including a microprocessor, dynamic memory, a hard disk, a keyboard, a monitor, and an operating system.
+
+    Warren-Boulton Dir. ¶ 20.
+
+6. PCs are built primarily by firms known as Original Equipment Manufacturers ("OEMs"). OEMs typically purchase from different third-party vendors and preinstall various hardware and software components for their systems, including the operating system and application software.
+
+    Warren-Boulton Dir. ¶ 23.
+
+7. OEMs develop and sell their PCs to consumers in a competitive market and design their PCs and their hardware and software features to respond to consumer demand.
+
+    See infra Part II.A; ¶ 15.1.1.
+    Warren-Boulton Dir. ¶ 24.
+
+8. An Operating System is the "central nervous system" of the PC.
+
+    Barksdale Dir. ¶ 69.
+
+8.1. An operating system performs two basic functions. First, the operating system allows the various components of the PC to communicate and function with each other; it provides "the software that controls the allocation and usage of hardware resources such as memory, central processing unit time, disk space, and peripheral devices."
+
+    Microsoft Press Computer Dictionary, at 341 (3d ed. 1997).
+    Farber Dir. ¶ 11 (the operating system "controls the execution of programs on computer systems and may provide low-level services such as resource allocation, scheduling and input-output control in a form which is sufficiently simple and general so that these services are broadly useful to software developers").
+
+8.2. Second, an operating system provides a "platform" by exposing Applications Programming Interfaces ("APIs") that applications use to "call upon" the operating system's underlying software routines in order to perform various functions, such as displaying a character on a monitor.
+
+    Schmalensee Dir. ¶¶ 93-94.
+
+9. An Application is a software program "used to perform specific user-oriented tasks".
+
+    Farber Dir. ¶ 11.
+
+9.1. Applications typically "run on top" of the operating system and draw upon the services that the operating system's "platform" provides.
+
+    Warren-Boulton Dir. ¶ 22
+
+9.2. The term Platform is used in the software industry to describe software that "provides features or services that can be used by software applications."
+
+    Schmalensee Dir. ¶ 93.
+
+10. Microsoft produces a number of PC operating systems, including MS-DOS and successive versions of its Windows operating system, the most recent version of which is Windows 98. Since at least the mid-1990s, Microsoft has dominated the market for PC operating systems. As will be explained, Microsoft's market share has remained well in excess of 90% during that period.
+
+    See infra Part II.B.2; ¶ 21.
+
+11. Applications are produced by numerous firms, including firms like Microsoft that also produce operating systems and others, known as Independent Software Vendors ("ISVs"). Microsoft's application software is dominant in several key categories, most notably in office productivity suites.
+
+    See infra Part V.F.1.b.(1).; ¶ 287.2.1.
+
+12. All the components of a PC system -- the microprocessor and other hardware, operating system, and applications software -- must be compatible with each other. For instance, software, including the operating system and applications, must be designed to be compatible with the PC's microprocessor, and application software must be compatible with the operating system.
+
+12.1. There are different types of PC systems.
+
+12.1.1. An Intel-compatible PC is one designed to function with Intel's x86/Pentium families of microprocessors or compatible microprocessors manufactured by Intel or other firms. Microsoft's Windows operating system, and different types of UNIX operating systems, are examples of operating systems that run on Intel-compatible PCs.
+
+    Fisher Dir. ¶ 62.
+
+12.1.2. There are other types of PCs that use microprocessors that are not Intel-compatible, such as the Apple Macintosh computer system. Operating systems designed to run on Intel-compatible PCs, known as Intel-compatible PC operating systems, will not function on an incompatible PC like the Macintosh; and operating systems designed for an incompatible PC like the Macintosh will not function on an Intel-compatible PC.
+
+    Gosling Dir. ¶ 7.
+
+12.2. Applications programs are typically written to run on a particular operating system and cannot run on other operating systems unless the developer goes to the time and expense to "port" the program to the other operating system. For example, the version of Microsoft's popular Office productivity suite designed to run on Microsoft's Windows operating system cannot run on the Apple Macintosh or even on other Intel-compatible operating systems.
+
+    See infra II.B.3.b.(1); ¶ 26.1.2.
+
+13. One of the most important applications today is an Internet Web browser ("browser").
+
+13.1. A browser is a "client application that enables a user to view HTML documents on the World Wide Web, another network, or the users's computer; follow the hyperlinks among them; and transfer files." A browser enables "the user to examine, display, scan, and navigate via the Internet" information located on the "Web."
+
+    Microsoft Press Computer Dictionary, at 505 (3d ed. 1997) (GX 1050).
+    Farber Dir. ¶ 11.
+
+13.1.1. The Internet is a global network that links many millions of PCs and a smaller number of servers together. Begun in the early 1960s, the Internet exploded in popularity with the emergence of the World Wide Web ("Web") in the mid-1990s.
+
+    Maritz Dir. ¶ 50.
+
+13.1.2. "The Internet is a global network of computers constructed by patching together many local area networks that use widely varying communication media such as telephone lines, dedicated data cables, and wireless links." The Internet links PCs by means of servers, which run specialized operating systems and applications designed for servicing a network environment.
+
+    Felten Dir. ¶ 11.
+
+13.1.3. In simplest terms, servers host and provide access to the Internet's content. In the case of the Web, this content consists principally of Web Pages, which are created by Internet Content Providers ("ICPs"). There are millions of web pages located on the thousands of servers that comprise the Internet.
+
+    See infra Part V.E.1.a; ¶ 255.
+
+13.1.4. Web pages can be accessed over those thousands of servers from millions of PCs because the Internet uses a number of widely-accepted standards. For instance, web pages are typically written in Hypertext Markup Language (HTML) and are transferred between servers and PCs using a common protocol known as Hypertext Transfer Protocol (HTTP).
+
+    Felten Dir. ¶ 13. (The Web is "characterized by a set of standard data formats, including HyperText Markup Language ('HTML'), and a set of standard communication protocols, such as HyperText Transfer Protocol ('HTTP'), that together allow computers to share multimedia documents that may contain links to other such documents.").
+
+13.1.5. Consumers typically access the Internet through the services of an Internet Access Provider, which can be an Internet Service Provider ("ISP"), such as Earthlink or AT&T Worldnet, or an On-Line Service ("OLS"), such as America Online or Prodigy. Internet access providers are commercial firms that connect users to the network of servers that comprise the Internet.
+
+    See infra V.D.1; ¶ 213.
+
+13.2. Although graphical web browsers have existed since 1993, the first widely-popular commercial graphical browser was developed and brought to market by Netscape Communications in late 1994. Microsoft introduced its browser, Internet Explorer, in 1995.
+
+    See infra Part III.B.1; ¶ 53.1.1; Part V.B.2.c; ¶ 126.
+
+II. Microsoft Possesses Monopoly Power Over Operating Systems
+
+14. Microsoft possesses monopoly power over operating systems for Intel-compatible personal computers.
+
+14.1. Microsoft's monopoly power in Intel-compatible personal computers is demonstrated by its customers' lack of any commercially viable alternative to Windows and certain Microsoft conduct that makes sense only if there is a monopoly to protect. See infra Part II.A; ¶¶ 15-16.
+
+14.2. A traditional structural analysis, which shows that Microsoft possesses a dominant market share protected by immense barriers to entry, confirms that Microsoft has monopoly power. See infra Part II.B; ¶¶ 17-32.
+
+14.3. Microsoft's monopoly power is also evidenced by its ability to control price. See infra Part II.C; ¶¶ 33-38.
+
+14.4. Dean Schmalensee's analysis that Microsoft lacks monopoly power is contrary to the evidence, inconsistent with his prior testimony and writings, and otherwise unreliable. See infra Part II.D; ¶¶ 39-50.
+
+A. Microsoft's monopoly power is established by direct evidence of its existence and exercise
+
+15. That Microsoft has monopoly power in operating systems is directly evidenced by the "sustained absence of realistic commercial alternatives" to Microsoft's operating system product.
+
+    Fisher, 6/1/99am, at 11:17-18.
+
+15.1. Microsoft's principal customers, computer manufacturers (OEMs), lack any commercially viable alternative to Windows.
+
+15.1.1. OEMs are the most important direct customers of operating systems. Because competition among OEMs is intense, they respond to consumer demand. OEMs thus not only are important customers in their own right, but also are surrogates for determining the commercial alternatives reasonably available to consumers.
+
+    Dr. Warren-Boulton testified that the "great majority of operating systems installed on PCs are installed on new machines by OEMs." Warren-Boulton Dir. ¶ 23; id. at ¶ 23 n.7 (noting that in 1997, 87.6% of all copies of Windows 95 were installed by OEMs).
+    Professor Fisher testified: "OEMs's are, in some sense, the representative of the consumer for certain purposes. They are in competition with each other. They gain if they deliver what end users actually want. They wouldn't care about the restrictions on them if they don't think that it mattered in their dealings with consumers." Fisher, 6/2/99am, at 22:1-6.
+    Dean Schmalensee conceded that "OEMs respond to consumer demand." Schmalensee, 1/25/99am, at 15:16 (sealed session).
+    See also Rose Dir. ¶ 17 ("If there were sufficient customer demand for a different operating systems for personal computers, Compaq would consider licensing that operating system."); Von Holle Dep., 1/13/99, at 299:15 - 300:1 ("if viable alternative emerged" to Windows, Gateway "would evaluate" them because Gateway likes "to make sure that" its "customers are offered a . . . choice of products that become popular in the market place"); Ransom Dep. (played 12/16/98pm), at 71:20 - 72:4 ("If there's a product with a competitive advantage or a price advantage, frankly, we would consider it. But it has not been presented to us.").
+
+15.1.2. OEMs uniformly testify that they lack any commercially viable alternative to Windows:
+
+    The testimony of Garry Norris, former Director of Strategy and Software at IBM Personal Computer Company, vividly illustrates the absence of commercially viable alternatives to Windows. Norris testified that, "without Windows 95, you couldn't be in the P.C. business." Norris, 6/7/99am, at 66:18-20. Indeed, Norris explained, IBM concluded in the summer of 1995 that, if it did not obtain a Windows 95 license, it would "lose . . . anywhere from 30 to 90 percent" of its sales volume, and "the IBM P.C. company would be out of business" in "three to twelve months." Norris, 6/7/99am, at 65:16 - 67:18.
+    The testimony of Microsoft's own OEM witness, Compaq's John Rose, illustrates OEMs' dependence on Windows. Compaq preinstalls Microsoft operating systems on over 90% of its PCs, including 100% of its popular Presario line, Rose, 2/17/99pm, at 12:25 - 15:3; Rose Dir. ¶ 17 (since 1993, Compaq has "not consistently loaded any alternatives to Windows on personal computers it markets to consumers."), because Compaq has no commercially viable alternative to Windows. Rose, 2/17/99pm, at 8:16-20.
+    Gateway's Penny Nash testified that for Gateway to stop licensing Microsoft operating systems would "be suicide." Fisher Dir. ¶ 63 (quoting Nash Dep. 11/18/97, at 5-6); see also Von Holle Dep., 1/13/99, at 298:2-23, GX 357 (sealed); Fisher Dir. ¶ 63 (quoting Brown Dep., 3/5/98, at 10-11).
+    Other OEMs gave similar testimony: Mal Ransom of Packard Bell, a leading OEM, testified that Packard Bell pre-installs Windows on 100% of its PCs and has done so for several years. Ransom Dep. (played 12/16/98pm), at 68:14 - 69:23. Packard Bell loads Windows because it is "the only viable choice." Ransom Dep. (played 12/16/98pm), at 69:5. Frank Santos testified that Hewlett-Packard has not considered any other operating system for its consumer line of PCs "because there isn't any out there." Fisher Dir. ¶ 63 (quoting Santos Dep., 4/13/98, at 7-8).
+
+15.1.3. All three economic experts in this case agreed that there is no commercially viable alternative to Windows to which a significant OEM can switch in response to a substantial price increase or its equivalent by Microsoft.
+
+    Professor Fisher testified that Microsoft's power is shown by evidence that "Microsoft's customers do not believe that they have serious commercial alternatives to Windows." Fisher, 6/1/99am, at 11:9-19; see also Fisher Dir. ¶ 63.
+    Dean Schmalensee conceded that there are no reasonable substitutes for Windows to which a major OEM can switch and that Microsoft can raise the short-term price of Windows. Schmalensee, 1/20/99am, at 33:3-8; see also 1/13/99pm, at 68:17 - 69:2.
+    Dr. Warren-Boulton testified that OEMs consider Windows "commercially necessary" and that "if confronted with a 10% increase in their Windows license, they would not switch to operating system products for other hardware platforms." Warren-Boulton Dir. ¶ 39 (summarizing OEM testimony); Warren-Boulton, 11/23/98pm, at 70:9-12 (testifying that it is "commercially necessary to be able to offer Microsoft operating system . . . to end users").
+
+15.1.4. Microsoft knows that OEMs have no choice but to load Windows.
+
+15.1.4.1. Microsoft told OEMs that they lack any alternative to Windows and, indeed, that Microsoft was "the only game in town."
+
+    Norris of IBM testified that Microsoft executives repeatedly sought to use the fact that IBM had no "commercially viable alternative" to Windows (Norris, 6/7/99am, at 66:18-20), and feared losing access to Windows, to pressure IBM into dropping products that competed with Microsoft. See infra Part V.C.2.b.(3); ¶¶ 209-212. Indeed, Norris testified, the Microsoft executive in charge of its relationship with the IBM PC company bluntly told IBM during negotiations, "'where else are you going to go? This is the only game in town.'" Norris, 6/7/99am, at 66:21 - 67:6.
+
+15.1.4.2. OEMs told Microsoft that they lack any viable alternative to Windows.
+
+    John Romano of Hewlett Packard wrote to Microsoft, when it imposed costly screen restrictions upon Hewlett Packard, that "if we had another supplier, I guarantee you would not be our supplier of choice." GX 309.
+    Gateway urged Microsoft - redacted - GX 357 (sealed).
+
+15.1.4.3. Other operating system vendors recognize that they do not provide a viable alternative to Windows.
+
+    John Soyring of IBM testified: "As a result of the applications and device support for Windows, in my view, suppliers of PCs have no commercially viable choice but to license Windows and to offering on the vast majority of PCs they ship." Soyring Dir. ¶ 11.
+    Avadis Tevanian of Apple computer testified: "For the foreseeable future, Microsoft will maintain a market share in excess of 90 percent of the desktop operating system market, a dominance that will enable it to continue to effectively control both price and technologies." Tevanian Dir. ¶ 14.
+    The CEO of Red Hat Linux also insists that Red Hat is not a viable competitor to Microsoft. In a Washington Post article he said: "'It just tells you how desperate Microsoft is for a competitor that they're holding up a software box produced by 100 guys in the hills of North Carolina.'" He also said: "'We are absolutely not a viable competitor at this time. We have every intention of being one. But how long will it take? Realistically, it will be twenty years.'" GX 1568.
+
+15.1.5. Microsoft set the Windows royalty recognizing that OEMs have no viable alternative to Windows.
+
+    Joachim Kempin, Microsoft's Vice President for OEM sales, testified that the prices set by other operating system vendors were not a consideration in setting the Windows 98 royalty. Kempin, 2/25/99pm, at 97:24 - 98:23. To the contrary, Microsoft set the royalty for Windows 98 by "'compar[ing] it with Windows 95.'" Id. at 98:6 (quoting Kempin's deposition, 21:20 - 22:6); see also Kempin, 2/25/99pm, at 98:15-23 (quoting Kempin's deposition, 22:10-22:6) (Kempin also did not consider "'competition more generally'").
+    Kempin testified that he did not consider the prices set by other operating system vendors because, "with Windows 95 or 98, when it comes to value propositions, it just doesn't come close to anything else. Meaning I believe competitors are basically selling inferior-type products." Competitors products are "inferior," Kempin explained, because "the number of applications, peripheral devices, support on that platform, basically, is so huge that the benefits of buying into that platform is huge." Kempin, 2/25/99pm, at 98:24 - 99:5 (quoting Kempin's deposition, 22:19-24).
+    Kempin, in contemplating "OEM pricing thoughts," wrote that although conceivably, "[o]ur high prices could get a single OEM . . . or a coalition to fund a competing effort," he considers it "doubtful." He concluded: "Could they convince customer to change their computing platform is the real questions. [sic]. The existing investments in training, infrastructure and applications in windows computing are huge and will create a lot of inertia." GX 365.
+
+15.1.6. OEMs do not believe alternatives to Windows are likely to emerge in the next several years such that Microsoft is constrained from being able to raise price or reduce quality today.
+
+    Garry Norris testified that without a Windows 95 license, "the IBM P.C. company would be out of business" in "three to twelve months." Norris, 6/7/99am, at 65:16 - 67:18.
+    Professor Fisher testified that there is no reason to "believe that OEMs would substitute other operating systems for Microsoft's Windows operating system in favor of anything that can now be seen on the horizon"; that is, in "the next few years." Fisher, 1/6/99am, at 69:23 - 70:1.
+
+15.2. Both OEMs and applications developers (ISVs) recognize that they are dependent on Microsoft and fear that Microsoft will use its monopoly power to harm them if they favor Microsoft's rivals.
+
+    When Microsoft released a Java development kit that reflected Microsoft's "breaking away from pure Java," Paul White of Symantec, an ISV, wrote that "it's better to say nothing than risk the blast from MS." GX 2078.
+    Barry Schuler of AOL testified that, because its applications must run on Windows, "there's an absolute dependency on what the future direction of that operating system." DX 2810.
+    William Harris testified: "Intuit's dependence on the Windows operating system creates additional dependence on the supplier of the operating system, Microsoft. We depend on Microsoft for the information, specifications, training, development assistance and development tools necessary to develop our products in an effective and timely manner." Harris Dir. ¶ 28.
+    Hewlett Packard's John Romano testified that- redacted-DX 2582A (sealed).
+    A Compaq presentation entitled "Microsoft Meeting Preparation -- Portable and Software Marketing PC Division" dated January 13, 1993, states: - redacted - The presentation continued: "Judgment: How retaliatory would they get?" and lists the possibilities as follows: "Pricing advantage -- Revenue from updates -- Access to early SDKs -- Field sales activities (Microsoft has ~900 field sales people) -- Support and training -- Inclusion in advertising -- Tone toward Compaq in press and with customers -- Selection and elevation of other OEMs as leaders -- Make integration relations even more strained than they are today -- Access to source code, modification ownership -- Microsoft directional information and plans -- Customers." GX 433 (sealed).
+
+16. Microsoft repeatedly took actions that make sense only because it has monopoly power to protect.
+
+    Fisher, 6/1/99am, at 12:14-17.
+
+16.1. Microsoft's expensive effort to gain browser usage share can be explained only as an effort to protect Microsoft's position in operating system and thus demonstrates substantial and durable market power.
+
+    As detailed below, Microsoft engaged in a very costly course of conduct designed to gain a substantial share of the market for Internet browsers. See infra Part V.G.
+    This conduct evidences monopoly power because, as will be explained (see infra Part V.G.), Microsoft could not have expected to recoup its hundreds of millions of dollars in browser-related costs except by thwarting threats to its position in operating systems and thereby increasing or prolonging its monopoly profits in operating systems.
+
+16.2. Microsoft's monopoly power is also evidenced by its ability, for several years, to force other firms to cooperate in Microsoft's efforts to exclude threats to its dominant position in operating systems.
+
+16.2.1. This conduct includes, among other things:
+
+    Forcing OEMs to accept Microsoft's Internet Explorer browser as a condition of licensing Microsoft's Windows operating system. See infra Part V.B.
+    Forcing OEMs to agree to costly restrictions on their ability to customize their PC systems; OEMs agreed to those restrictions, in the words of one executive, because they lack any "choice of another supplier." GX 309. See infra Part V.C.1.
+    Threatening to retaliate against OEMs that favored products that threaten Microsoft's operating system monopoly. See infra Part V.C.2.
+    Threatening to retaliate against Intel if Intel developed platform-level software or favored Netscape or Sun in various ways. See infra Part VI.
+
+16.2.2. This conduct is part of a predatory course of conduct that makes no sense unless Microsoft expected it to lead to monopoly recoupment in the operating system market. All these acts reduced the value of Windows to end users. Microsoft would not rationally have reduced the value of Windows unless it anticipated that doing so would create or increase monopoly power and thereby enable it to earn greater monopoly profits.
+
+    Professor Fisher testified: "Microsoft has, I think, plainly taken actions which only make sense if they believe that they have a monopoly to protect. Those are, of course, the actions which are in large part the subject of this case." Fisher, 6/1/99am, at 12:14-17.
+    Dean Schmalensee conceded that, if a firm can impose a tie-in "that implies the firm has some power over price." Schmalensee, 1/19/99am, at 40:12-22. Dean Schmalensee also previously wrote that: "Evidence that competitors have conspired to fix prices or divide markets is treated as very good evidence that these competitors have market power" (GX 1514), and that such evidence "perhaps" could indicate "monopoly power." Schmalensee, 1/14/99pm, at 46:14 - 47:6.
+    Dr. Warren-Boulton testified that "to the extent there is evidence . . . which shows that Microsoft has . . . used its position in the operating system market to exclude competitors from either that market or from markets that might facilitate the entry of a firm into that market, then that's direct evidence of the ability to exclude" and "that by itself is direct evidence of the existence of monopoly power." Warren-Boulton, 12/1/98am, at 32:3-20.
+
+B. Microsoft's monopoly power is also demonstrated by a structural analysis
+
+17. Microsoft's monopoly power is confirmed by a traditional structural analysis, which shows that Microsoft possesses a dominant share of a well-defined market protected by immense barriers to entry.
+
+    Professor Fisher testified that "Microsoft's high market share is an indication that it possesses monopoly power. The analysis of barriers to entry confirms that monopoly power exists." Fisher Dir. ¶ 65.
+    Dr. Warren-Boulton likewise testified that Microsoft "possesses monopoly power" because it "for several years has enjoyed, and is projected for several years to retain, a market share in excess of 90%," and this share "is protected by substantial barriers to entry." Warren-Boulton Dir. ¶ 7.
+
+17.1. The standard way to determine monopoly power is (1) to ascertain whether a firm possesses a very large share of a properly defined market and then (2) to determine whether substantial barriers to entry protect that share by impeding the ability of rivals to enter or to expand.
+
+    Professor Fisher testified that "the ordinary way you proceed in an antitrust case is to define a market and look at market shares" and then determine whether there are substantial barriers to entry. Fisher, 6/1/99am, at 12:2-13; see also Fisher, 6/1/99am, at 6:1-3 (explaining that this is the "standard way" to determine monopoly power); Fisher Dir. ¶¶ 32-39 (testifying that "monopoly power is conventionally addressed by defining 'the relevant market' and assessing shares in the market share"); Warren-Boulton Dir. ¶¶ 18, 42-44.
+    Dean Schmalensee conceded that: "'The traditional and most common approach in an instance where one can define a relevant market in the antitrust sense'" is "'to first look at shares of that arket and then if shares are large, to move on to consider conditions of entry.'" Schmalensee, 1/13/99pm, at 24:9-25 (quoting GX 1526 (Schmalensee's testimony in Bristol)).
+
+17.2. A large share of a well-defined market protected by substantial entry barriers warrants an inference of monopoly power.
+
+    Professor Fisher testified: "A large share of a properly defined market" is indicative of the ability to exercise substantial market power, and that where "there are significant barriers to entry, monopoly power can be present." Fisher Dir. ¶¶ 32-36, 39.
+    Dean Schmalensee conceded that, if Microsoft's Windows operating system enjoys the protection of substantial barriers to entry, then he could not conclude that Microsoft lacks monopoly power. Schmalensee, 1/14/99am, at 8:22 - 9:9.
+    Dr. Warren-Boulton testified "that market share is an indicator of monopoly power. It is one of several indicators of monopoly power." Warren-Boulton, 11/19/98am, at 56:22-23.
+
+1. Operating systems for Intel-compatible PCs comprise a relevant market
+
+18. The purpose of defining markets is to determine whether substantial and durable market power can be exercised; accordingly, a properly defined relevant market should include the set of products over which a single firm, if it controlled production of those products, could exercise substantial market power.
+
+    Dean Schmalensee testified that a relevant market consists of the "smallest aggregate that could be profitably monopolized." Schmalensee, 6/24/99pm, at 58:15-23.
+    Dr. Warren-Boulton testified that a properly delineated antitrust market includes the set of products over which a single firm, if it controlled production of those products, could exercise substantial market power. Warren-Boulton Dir. ¶¶ 26-32.
+    Professor Fisher testified that the purpose of defining a market is to determine the "set of things that could constrain the power of the alleged monopolist." Fisher, 6/1/99am, at 9:17-24.
+
+18.1. The relevant market thus should include only reasonable substitutes that in a reasonable period of time could constrain -- and thus defeat -- an attempt to exercise substantial market power.
+
+    Professor Fisher testified that a relevant market "should include all those products that reasonably serve to constrain the behavior of the alleged monopolist." Fisher Dir. ¶ 32; Fisher, 6/1/99am, at 9:18-21 (stating that "in defining a market and then in examining market power, you typically look at . . . things that could constrain the power of the alleged monopolist.").
+    Dr. Warren-Boulton also testified that a relevant market should include substitute products that could prevent the exercise of monopoly power. Warren-Boulton Dir. ¶¶ 27-28. He further testified that it is "important not to define the market too broadly" by including products that are not reasonable substitutes, "for that might understate the power of the firm whose conduct is being examined." Warren-Boulton Dir. ¶ 28.
+
+18.2. These include:
+
+18.2.1. Demand responses. The relevant market should include products to which consumers could switch, without substantial difficulty, in response to an attempt by firms in the candidate market to exercise substantial market power.
+
+    Professor Fisher testified that, in defining a market, one must look at "demand substitutability," which "concerns the question of what are the products or the firms to which the alleged monopolist's customers could readily turn in the event of an increase in price." Fisher, 6/2/99am, at 69:22 - 70:1; Fisher, 6/1/99am, at 9:21-24 ("demand substitutability" refers to "the set of products to which customers can turn in the event of an attempt to earn supernormal profits" by the alleged monopolist); Fisher Dir. ¶¶ 32-33 (same).
+
+18.2.2. Supply responses. The relevant market should also include firms that do not presently produce the product in question or a reasonable substitute for it but which, without substantial difficulty, could do so in response to an attempt by firms in the candidate market to exercise substantial market power.
+
+    Professor Fisher testified that, in defining a market, one must look at "supply substitutibility," which "refers to the ability of firms who do not now produce demand substitutable products, easily to produce demand substitutable products." Fisher, 6/2/99am, at 70:9-11; Fisher, 6/1/99am, at 10:8-13 (same); Fisher Dir. ¶¶ 32, 34 (same).
+
+19. Operating systems for Intel-compatible PCs comprise a relevant market because they lack good substitutes; that is, there are no substitutes that in a reasonable period of time could defeat -- i.e., render unprofitable -- an attempt by a monopolist over such operating systems from exercising substantial market power.
+
+19.1. Other "platform" products, such as Internet browsers and Java, are not good substitutes for operating systems because they cannot function without an operating system.
+
+    Jim Barksdale testified: "I am not suggesting that the browser is a replacement for the operating system; Navigator still needs an operating system, such as Windows 98, running underneath it, but Navigator can and does serve as a platform for certain network-centric applications." Barksdale Dir. ¶ 82; Barksdale, 10/20/98pm, at 72-74 (Barksdale testified that while Netscape could serve as a substitute for certain platform chacteristics, he does not believe that Netscape could seriously substitute for all platform characteristics).
+    James Clark, founder and former Chairman of Netscape, testified that: "Netscape is not an operating system. It's not even a networked operating system. . . . Netscape was developing a platform. A platform is not the same as an operating system. . . . The idea was to make it independent of the Microsoft operating system, but no attempt whatsoever to displace the Microsoft operating system." Clark Dep. (7/22/98) at 44:25 - 46:16 (DX 2562). Clark explained Netscape intended to provide a software layer that would run on top of otherwise incompatible operating systems and enable them to use network or web based applications, but that "layer still relied on there being some kind of machine and some kind of operating system underneath." Clark Dep. (7/22/98) at 48:5 - 49:4 (DX 2562). Clark categorically denied that Netscape intended for the browser to replace the operating systems that it relied upon. Clark Dep. (7/22/98) at 48:5 - 50:4 (DX 2562).
+    Netscape's Richard Schell similarly testified that Netscape intended to be "operating system agnostics," (i.e., work well with all operating systems), but not to replace operating systems. When Microsoft counsel followed up by asking whether he regarded "the notion of Navigator replacing Windows [as] a slightly ridiculous assertion," Schell explained: "There are 14 million lines of code in Windows 9X. They must do something. For us to have thought that we would replace all of those would have been a stretch of the imagination. We thought we could provide functionality that enhanced not only Windows but Unix and the Macintosh and . . . for some developers and some users, that would become their primary environment, but we would never think that that meant we were replacing Windows." Schell Dep. (9/15/98), at 103:17 - 104:22 (DX 2587).
+    Dean Schmalensee testified that he is not aware of any "software that only browses and does not do anything else and requires no other software to run." Schmalensee, 6/23/99am, at 53:2-10; id. at 57:14-17 (same for other "web-based applications").
+    Professor Fisher testified: "In the present case, the growth of the Netscape browser or the widespread use of original Java might have perfectly well have broken down the applications barrier to entry and allowed other operating systems to compete. But it would be the other operating systems that were then in the market, not . . . either Netscape, the browser market, or Sun because of Java." Fisher, 6/1/99am, at 18:5-11.
+
+19.2. Intel-compatible server operating systems are not good substitutes for Intel-based PC operating systems because they lack the features and breadth of applications users demand and are prohibitively more expensive.
+
+    Sean Sanders of Novell testified that server operating systems do not compete with Windows. Sanders Dep., 1/13/99pm, at 184:13 - 185:1. He further explained that to convert Novell's server operating systems into desktop operating system would require starting "all over again" and building the operating system "from the ground up." "It is not easily transferable to" the desktop "role at all." DX 2584.
+    Sun's Brian Croll testified that Sun's Solaris operating system does not compete with Windows. Croll Dep. (played 12/15/98pm), at 56:23 - 57:13.
+    Ron Rassmussen, of Santa Cruz Operating Systems, testified: "People are not purchasing our operating system as a desktop as much as they did at one time" and that it is "more effective for our strategy to move into a purely server role." DX 2581 (testifying that using SCO's operating system for desktop use is prohibitively expensive for users).
+    Paul Maritz agreed "that the applications you find on a server are different from those you find on an Intel PC acting as a desktop." Maritz, 1/27/99pm, at 28:18 - 29:1.
+    Dr. Warren-Boulton testified that "Intel-compatible operating system products that are designed . . . to operate 'servers' are not viable substitutes for a desktop operating systems" because they "are generally more expensive yet do not provide the features consumers demand when they purchase PC operating systems." Warren-Boulton Dir. ¶ 40.
+
+19.3. Nor do other devices, which run other (non-Intel-compatible) operating systems, constrain the exercise of substantial market power over Intel-compatible PC operating systems.
+
+19.3.1. A PC operating system accounts for only a very small percentage of the cost of a PC system; therefore, even a substantial increase in the price of a PC operating system above competitive levels will result in only a trivial increase in the cost of a PC computer system to users.
+
+    Maritz testified that the Windows royalty is "less than 5% of the price of a typical new computer." Maritz Dir. ¶¶ 21, 132.
+    Professor Fisher testified that a 10% increase in the price of a PC operating system will result in only approximately 1 % increase in the price of PC. Fisher, 6/1/99am, at 27:7-25.
+    Dr. Warren-Boulton similarly testified that "even a 10% increase in the price of the OS would result in at most a 1% increase in the price of even inexpensive PCs." Warren-Boulton Dir. ¶ 37.
+
+19.3.2. A common-sense economic analysis, therefore, shows that users will not in significant numbers incur the substantial costs of switching away from Intel-based PCs, and hence from Windows, in response to even a large increase in the price of the operating system.
+
+    Professor Fisher testified that the "[q]uestion at issue in assessing Microsoft's power is not whether a change--an increase in the price of the P.C. as a whole would cause people to turn to other non-P.C. devices, or for that matter, to Apple," but rather "whether an increase in the operating system price will cause that to happen." Fisher, 6/1/99am, at 27:1-6. He then concludes that it will not because even a 10% increase in the price of the operating system would result in "less than a 1 percent increase in the P.C. price." Fisher, 6/1/99am, at 27:14-16.
+    Dr. Warren-Boulton similarly observed that "even a 10% increase in the price of the OS would result in at most a 1% increase in the price of even inexpensive PCs," and in light of "the cost to users of switching to another platform, such a small increase in the price of the PC platform would not be expected to result in a large reduction in the demand for PCs, and thus for PC operating systems." These facts led him to conclude "that PC operating systems are a separate market." Warren-Boulton Dir. ¶ 37; see also Warren-Boulton, 11/23/98pm, at 8:20-25, 9:17-25.
+
+19.3.3. The evidence confirms that a substantial price increase for PC operating systems (a trivial increase in the price of the PC) will not result in switching away from PC systems, and hence PC operating systems, sufficient to make the substantial price increase in the operating system unprofitable.
+
+19.3.3.1. OEMs. As explained, OEMs will not switch away from Windows (let alone start building other types of personal computers) in response to a substantial exercise of market power (such as increased restrictions or prices) over Intel-compatible PC operating systems.
+
+    See supra ¶ 15.1.
+
+19.3.3.2. Apple. The most obvious possible substitute for users are other personal computers, such as Apple's Macintosh. But even Apple -- the closest substitute to PCs -- does not constrain the exercise of power over operating systems for Intel-based PCs.
+
+    Dean Schmalensee conceded that Microsoft's present operating system competitors, including Apple, are not "the primary constraint on Microsoft's pricing." Schmalensee, 1/14/99am, at 24:16-25.
+    Although some users do switch from PCs to the Macintosh, Apple's Avadis Tevanian testified that Apple still cannot gain substantial share and, therefore, cannot effectively compete with Microsoft. Tevanian, 1/4/99pm, at 9:20 - 12:18.
+    Plaintiffs' economists testified that consumers' switching from PCs to the Macintosh is not the result of the exercise of market power over PC operating systems and, therefore, does not show an effective constraint on Microsoft's ability to exercise substantial market power. Warren-Boulton, 11/23/98pm, at 6:18 - 15:12; see also Fisher Dir. ¶ 137 ("Apple represents the main potential alternative to desktop PCs running Microsoft's Windows. (Although that alternative is not sufficient to keep Microsoft from having monopoly power.)"); Warren-Boulton, 11/23/98pm, at 8:20-25 (testifying that if the cost of the Windows operating system increased "by a small but significant amount . . . not enough people are going to decide . . .to switch to the Mac platform" to include Mac in the market). Switching to the Macintosh simply means the value of Microsoft's monopoly is shifting, not that its monopoly power is dissipating. Warren-Boulton, 11/23/98pm, at 13:3 - 15:12 (testifying that the question is "'what is the constraint on the monopoly pricing of the operating system'" and that the "fact that demand for the product, as a whole, is increasing or decreasing is not the relevant question'").
+
+19.3.3.3. Other information appliances. There is similarly no evidence that other information appliances constrain Microsoft's ability to exercise substantial market power over operating systems for Intel-compatible personal computers.
+
+19.3.3.3.1 First, most such appliances are complements to, rather than substitutes for, personal computers, so switching is not likely.
+
+    Steve Case stated publicly and testified that: "It's hard to imagine that PCs won't be the dominant way people connect with the Internet for many years to come, and Microsoft has a pretty amazing lock on that business. . . . Other devices will emerge, but I doubt any will challenge Windows." Case Dep. (played 6/4/99am), at 44:17 - 45:4; Ct. Ex. 1.
+    AOL's Barry Schuler testified: - redacted - Schuler Dep., 5/5/99, at 183:18-21 (sealed). - redacted - Schuler Dep., 5/5/99, at 183:24 - 184:12 (sealed).
+    Professor Fisher testified that other devices are not presently good "substitutes for PC's. And you can perfectly well have a monopoly in operating systems for PC's, despite the fact that there are or may be a number of operating systems for hand-held devices, TV set-top boxes and so on." Fisher, 1/12/99am, at 7:14-16; Fisher, 1/12/99am, at 7:19 - 8:7. Professor Fisher further testified that other information appliances do not presently constrain Microsoft's behavior. Fisher, 6/2/99am, at 83:20-23.
+    Bill Gates stated that for "most people at home and at work, the PC will remain the primary computing tool; you'll still want a big screen and a keyboard" for many applications and "you'll need plenty of local processing power for graphics, games, and so on. But the PC will also work in tandem with other cool devices. You'll be able to share your data--files, schedule, calendar, email, address book, etc.--across different machines; and you wont have to think about it; it will be automatic." GX 2059 (Newsweek article dated 5/31/99). In a similar vein, the IDC forecasts that for PCs and other information appliances, there will be "some competition between these two categories of devices. However, it is more true that the two devices will help lift each other. As a rising tide raises all ships, the growth of the Internet as an important tool for communication, commerce, and entertainment will provide ample justification for both form factors." DX 2423, at 35.
+    See also infra Part VII.D.C.3; ¶ 396.2.
+
+19.3.3.3.2 Second, even if other information appliances became better substitutes for a wider range of PC functions in the future, a small increase in the price of PC systems caused by a large increase in the price of the operating system will not result in substantial switching to other information appliances. In other words, while other information appliances may affect relative ubiquity of PCs, and thus the value of Microsoft's monopoly over operating systems for Intel-based PC operating systems, those appliances do not undermine the fact that there is a market for such operating systems that is capable of being monopolized.
+
+    Dr. Warren-Boulton testified that a small increase in the price of the overall computer system will not induce large numbers of users to incur the costs required to switch to other devices. Warren-Boulton, 11/23/98pm, at 14:16-23; Warren-Boulton Dir. ¶¶ 37-39.
+    Professor Fisher testified that, for this reason, the existence of other information appliances was "basically totally irrelevant" to the monopoly power analysis. Fisher, 6/3/99pm, at 65:1-7. "The fact that other devices are going to be important, too, is interesting, but we're not talking here, by the way, about a monopoly of PCs themselves. We're talking about a monopoly of operating systems for PCs, and to believe that this has something to do with eroding Microsoft's monopoly power in operating systems, you would have to believe that small changes in the price of the operating system for PCs would cause people no longer to buy PCs, but to ship" "these other devices." Fisher, 6/3/99pm, at 65:23 - 66:6. See also Fisher, 6/1/99am, at 27:14-22.
+
+19.3.3.3.3 Third, because the issue for market definition is whether a non-trivial increase in the price of the operating system will cause switching away from PC operating systems (to other information appliances running other operating systems or otherwise) to a sufficient extent to render that price increase unprofitable, there is no need to reach the question of whether PCs themselves comprise a relevant market (that is, whether a large price increase in the cost of a PC would be rendered unprofitable by switching).
+
+    Fisher, 6/2/99pm, at 30:2-13; 6/3/99pm, at 65:23 - 66:6.
+
+20. Microsoft internal documents and the testimony at trial of its witnesses also support delineating a market for Intel-based desktop operating systems.
+
+    Joachim Kempin testified, Microsoft tracks the share of "[o]perating systems for Intel PC[s]." Kempin, 2/25/99pm, at 94:24 - 95:7.
+    Microsoft internal documents analyze as "competition" other "x86 Os[s]" -- that is, other Intel-based operating systems -- but do not characterize as competition other types of operating systems. GX 401.
+
+2. Microsoft possesses a dominant, persistent, and increasing share of the market for operating systems for Intel-compatible PCs
+
+21. Microsoft possesses a dominant, persistent, and increasing share of the relevant market.
+
+21.1. Microsoft presently enjoys a market share in excess of 90%.
+
+    Data sponsored by Professor Fisher and Dr. Warren-Boulton shows that Microsoft's share of Intel-based PC operating systems is well over 90%. GX 1.
+    Professor Fisher testified: "Microsoft's share of personal computer operating systems is very high and has remained stable over time. Microsoft's worldwide share of shipments of Intel-based operating systems has been approximately 90 percent or more in recent years . . . . Even if operating systems for non-Intel-based computers are included in the market definition, Microsoft's share is still very high and stable." Fisher Dir. ¶ 64.
+
+21.2. This share, which Microsoft has possessed since at least the early 1990s, has been stable through the many changes that have occurred in the computer industry.
+
+    Dr. Warren-Boulton testified: "This high market share has been remarkably stable." Warren-Boulton Dir. ¶ 45.
+    Data sponsored by Professor Fisher and Dr. Warren-Boulton shows that Microsoft's share of Intel-based PC operating systems is projected to rise to 96% by 2001. GX 1.
+    Professor Fisher testified: "Here, Microsoft's share of the P.C. operating systems business has been high and stable for some years. Further, it's expected that it will remain high for some years." Fisher, 6/1/99am, at 12:2-8.
+    Microsoft North America FY96 Reviews, an internal financial report compiled in June 1996, reported that the - redacted - GX 402, at MS6 6001734 (sealed), GX 403, at MS6 6006356 (Microsoft North America FY97 Reviews) (sealed).
+
+21.3. Microsoft's share is projected to rise even further in the next century.
+
+    Rational Software "believes its continued success will become increasingly dependent on its ability to support the Microsoft platform, including Windows 95, Windows 98, and Windows NT operating systems." GX 1663 (SEC 10-Q), at 5. Mike Devlin, a Microsoft witness, testified that Rational's "increased dependence" on Microsoft will indeed be the result of "the increasing market share of the Microsoft platform." Devlin, 2/4/99am, at 25:22 - 26:1; Devlin, 2/4/99am, at 14:8 - 15:9.
+    IBM's John Soyring testified that Microsoft's 92% market share will "stay that high, if not get higher" in the next two or three years. Soyring, 11/18am, 71:24 - 72:4.
+    Professor Frank Fisher testified: "Here, Microsoft's share of the P.C. operating systems business has been high and stable for some years. Further, it's expected that it's going to remain high for some years." Fisher, 6/1/99am, at 12:2-8.
+    Dr. Warren-Boulton testified that Microsoft's share of operating systems "has been above 90% since at least the early 1990s and this dominance is forecast through at least 2001." Warren-Boulton Dir. ¶ 45; see also Warren-Boulton, 11/19/98am, at 57:24 - 58:5 (referring to GX 1, which contains the IDC's "projections of continuous and sustained and increasing market shares").
+    A report prepared for Microsoft in September 1997 states: "Win32 penetration by household primary machines is currently 70% and projected to reach 90% by December 1998." GX 447, at MS7 001195.
+
+22. Precise calculation of Microsoft's market share or of the contours of the market is, in any event, unimportant.
+
+22.1. Even if one included in the market other products -- such as "middleware" and other operating systems -- Microsoft would still possess monopoly power.
+
+    Dr. Warren-Boulton testified that "even if the market were defined more broadly to include operating system products for all personal computers--such as those offered by Apple or some vendors of UNIX based operating systems that do not use an Intel-compatible microprocessor--my conclusion that Microsoft possesses monopoly power in a relevant market would still stand." Warren-Boulton Dir. ¶ 41.
+    Professor Fisher similarly testified that even "if operating systems for non-Intel-based computers are included in the market definition, Microsoft's share is still very high and stable." Fisher Dir. ¶ 64.
+    Professor Fisher testified that Microsoft possesses monopoly power even if threats to its monopoly power, such as Netscape and Java, are included in the relevant market. Fisher, 6/2/99am, at 61:11 - 62:10; 6/1/99am, at 46:12 - 47:19.
+
+22.2. Market definition and calculation of market shares are intended only to aid in determining whether a firm has monopoly power, so precise calculation is not necessary where refinement and precision will not change the ultimate determination of monopoly power.
+
+    As Professor Fisher testified, "there will often be no bright line between defining products as in the market" and "leaving them out while remembering that firms that do not produce them can enter fairly readily. But the lack of such a clear line will not matter, so long as one remembers that market definition need not be precise and that its purpose is to assist in analyzing the constraints on the behavior of the alleged monopolist." Fisher Dir. ¶ 36; see also Fisher, 6/2/99am, at 57:19 - 59:1 (discussing Fisher, "Microeconomics: Essays in Theory and Applications" (DX 2487)).
+
+3. Microsoft's dominant market share reflects monopoly power because its position in operating systems is protected by high barriers to entry
+
+23. Microsoft's dominant market share reflects monopoly power because that share is both the source of, and protected by, immense entry barriers that prevent rivals from entering or expanding.
+
+a. Definition of barriers to entry
+
+24. An entry barrier is any factor that permits firms already in the market to earn returns above the competitive level without inducing entry or expansion that would erode those returns.
+
+    Professor Fisher testified that a barrier to entry "permits the incumbent firms" to "earn supernormal profits without having their business bid away by the expansion of competitors or the entry of new firms." Fisher, 1/6/99am, at 52:20-23; Fisher, 6/1/99am, at 47:20-24.
+    Dean Schmalensee characterized as consistent with his definition of an entry barrier "'any factor that permits firms already in the market to earn returns above the competitive level while deterring outsiders from entering.'" Schmalensee, 1/14/99am, at 6:17 - 7:19 (quoting Areeda & Hovenkamp).
+
+b. The applications barrier to entry protects Microsoft's dominant position in operating systems
+
+25. The principal barrier to entry into operating systems is what has been termed in this case the applications barrier to entry.
+
+    Professor Fisher testified that the "dominant position of Microsoft's operating system is protected by the applications programming barrier to entry." Fisher Dir. ¶ 82; Fisher, 6/1/99am, at 48:4-11.
+    Dr. Warren-Boulton testified that "the applications barrier to entry sustains Microsoft's dominance, critically contributes to its monopoly power, and helps explain why other Intel-compatible operating systems, such as OS/2 and Linux, have persistently small market shares." Warren-Boulton Dir. ¶ 56.
+
+25.1. The applications barrier to entry results from a chicken-and-egg problem: Users will not in large numbers use an operating system other than Windows unless it supports a set of applications comparable to the set of applications available for Windows, but ISVs will tend not to write comparable applications for other operating systems in large numbers because those operating systems lack a large number of users.
+
+    Avadis Tevanian testified that Microsoft's dominant position rests in part on "a commercial symbiosis that exists between application programs and the computer operating systems on which those programs run. An application program is condemned to commercial failure if it will not operate reliably on the operating system of a sufficiently large installed base of computer systems. Similarly, the commercial viability of an operating system is critically dependent on the availability of application programs . . . ." Tevanian Dir. ¶ 15.
+    Dr. Warren-Boulton testified that as "an operating system gains popularity, the incentive to develop software for the operating system increases because the larger number of users for the operating system product implies a greater potential market for software developers. The development of yet more applications for that operating system, in turn, increases the value of the operating system to end users who, as explained, purchase operating systems in significant part based upon the quality and variety of applications available for it." Warren-Boulton Dir. ¶ 53.
+
+25.2. In other words, Microsoft's very large market share and installed base of users -- which create incentives for ISVs to write first and foremost to Windows rather than to other operating systems -- are themselves the source of an immense entry barrier that keeps the share of operating system rivals low and protects Microsoft's monopoly power.
+
+    Professor Fisher testified that "Microsoft's high market share leads to more applications being written for its operating system, which reinforces and increases Microsoft's market share, which in turn leads to still more applications being written for Windows than for other operating systems, and so on." Because of this pattern, Microsoft's "share is not likely to be eroded by new entry as long as the applications programming barrier to entry remains strong." Fisher Dir. ¶ 70.
+    Dr. Warren-Boulton testified that "an operating system product can rise to dominate the market, and once that dominance is achieved maintain it, because of both the large number of complementary software applications available for it and the flow of new applications that are written to it." Warren-Boulton Dir. ¶ 54.
+
+(1) Microsoft possesses a dominant market share because software developers have powerful incentives to write applications first and foremost to Windows
+
+26. The economic factors that create incentives to write applications first and foremost to Windows, and reinforce Microsoft's dominant market share, have three aspects.
+
+26.1. First, Microsoft has a dominant share of PC operating systems because a much greater breadth, depth, and number of applications run on Windows than on other operating systems.
+
+26.1.1. Users demand operating systems in order to run applications; and the greater the number, variety, and quality of applications available for a particular operating system, the greater the demand for that operating system.
+
+    In a Microsoft marketing plan entitled "Winning @ Internet Content" dated June 22, 1996, Andrew Wright wrote, "Microsoft's success to date as a platform company has primarily been driven by the availability of compelling applications for Microsoft operating systems. Operating systems, including Windows 95, Windows NT etc, are a means to an end and not an end in themselves. End users buy computers and operating systems to run applications." GX 407.
+    Microsoft's Chris Jones wrote in August 1995 that: "While there are many factors which determine an OS purchase, fundamentally consumers purchase the system that runs the cool applications first and best." GX 523, at MS98 0103654.
+    Avadis Tevanian testified that "the commercial viability of an operating system is critically dependent on the availability of application programs--including well-accepted, broadly-used application programs--that are written for use on that system." Tevanian Dir. ¶ 15.
+    Microsoft admitted in its Answer that the "popularity of an operating system is to some extent a function of the number, variety, and quality of applications available to use with that operating system . . . ." Answer ¶ 58.
+    Microsoft's pricing decisions reflect the fact that Windows is demanded precisely because of the number of applications written for Windows. Kempin testified that "competitors are producing, essentially . . . inferior-type products" because "the number of applications written for [Windows] is so huge" is an observation of the "result of the applications barrier to entry, and it's a fairly clear statement." Kempin, 2/25/99pm, 98:15-99:5 (quoting Kempin's deposition, 21:20-22:6, 22:19-24). This, Professor Fisher explained, is exactly what one would expect Kempin, a non-economist, to say rather than saying "I am protected by the applications barrier to entry and so, I have freedom as to pricing." Fisher, 6/1/99pm, at 5:15 - 6:5.
+
+26.1.2. Applications written for one operating system generally do not run on another because each operating system has its own, unique set of application programming interfaces ("APIs") to which applications are written.
+
+    Because operating systems have different APIs, "software applications written for one operating system will not run well on any other operating system." Barksdale Dir. ¶ 71.
+    See also Soyring Dir. ¶¶ 6-7 ("For an application to operate properly on an operating system, it must be designed to work" with that operating systems's APIs.); Gosling Dir. ¶ 12 (testifying that applications are largely "platform-specific"); Tevanian Dir. ¶ 12 ("Application programs must be developed so that they are compatible with the APIs of the underlying operating system. For example, Microsoft's popular word processing program, Word for Windows, will run on the Windows operating system; it cannot run on the Mac OS operating system.").
+
+26.1.3. A vastly larger number of applications are written for Windows than the number written for other operating systems.
+
+    There are "tens of thousands" of applications that run on Windows. Martiz, 1/25/99pm, at 22:10-13; Rose, 2/17/99pm, at 24:24 - 25:9 (testifying that there are over 70,000 applications available for Windows).
+    According to Microsoft's own economic expert, the number of applications available for other operating systems is at least an order of magnitude lower. DX 2098, at E2 (reporting that approximately 12,000 applications are available for the Macintosh, 900 for BeOs, and 250 for Linux).
+    Microsoft's efforts to convince Apple to give up QuickTime multimedia playback on Windows not only would have required Apple to cease innovating in multimedia playback on Windows, but would have also impeded Apple's ability to innovate on the authoring side because they would be limited to using the Windows playback mechanism. Schaaff, 1/13/99, at 203:3 - 205:3.
+    Mr. Engstrom admitted that, if Apple had accepted Microsoft's proposal and had not continued shipping a multimedia runtime for Windows, Apple would have been dependent on Microsoft for execution of Apple's authoring solutions. Engstrom, 2/24/99am, at 48:5 - 49:1.
+
+d. Microsoft retaliated against Apple, just as it did with Netscape, when Apple refused to accept Microsoft's proposal
+
+81. When Apple refused to accept Microsoft's proposal to cease competition in multimedia on Windows, Microsoft retaliated against Apple. The retaliation ranged from inserting misleading error messages in Windows to offering or withholding assistance to Apple as it suited Microsoft's strategic goals.
+
+81.1. Microsoft introduced misleading error messages into Windows that urged users to replace QuickTime with Microsoft technology.
+
+    Dr. Tevanian testified that Microsoft has inserted misleading error messages in Windows informing users that they might not be able to play certain multimedia files and asking users if they wanted to reconfigure their systems to use Microsoft's Active Movie technology instead of Apple's QuickTime technology. Tevanian Dir. ¶¶ 108-110 and Attachment 5; GX 917; GX 918; Tevanian, 11/4/98am, at 27:12 - 28:22.
+    Dr. Tevanian, an experienced software engineer, testified that such error messages are unlikely to issue accidentally. Tevanian, 11/4/99am, at 61:17 - 62:5.
+
+81.2. When Microsoft made changes to Internet Explorer 4.0 and Windows that resulted in impaired functioning of QuickTime, Microsoft opportunistically responded to Apple's requests for assistance by fixing the problem when it suited Microsoft's strategic interests and refusing to provide meaningful assistance when it did not.
+
+81.2.1. With the release of Internet Explorer 4.0, Microsoft changed the interaction between Windows and Internet Explorer so that data in certain media files were preferentially routed to Internet Explorer for playback. The changes prevented QuickTime from processing the data and frustrated users' attempts to access certain content. QuickTime also experienced additional difficulties operating with Internet Explorer 4.0 and Windows 98. These problems occurred at the very time that Microsoft tried to convince Apple to give up its multimedia platform-level software.
+
+    Dr. Tevanian testified: "When Microsoft produced its first plug-in capable browser [Internet Explorer 3.0] and needed to compete in the Netscape-dominated market by being technologically compatible, Microsoft used and adhered to Netscape's plug-in architecture. With the growth of Microsoft's browser market share through the bundling of Internet Explorer and Microsoft multimedia software with Windows, Microsoft reduced the compatibility between its browser and the open Netscape standard, starting with the introduction of Internet Explorer 4.0." Tevanian Direct ¶ 102.
+    Tevanian further testified: "With the successive releases of Microsoft's Internet Explorer 4.0, Microsoft Windows 98, and Microsoft multimedia software, Apple has seen a steady degradation of QuickTime's capability to play back a variety of QuickTime compatible media file formats while operating with Microsoft's Internet Explorer running on the Windows operating system." Tevanian Dir. ¶ 100; see also Tevanian Direct ¶ 101 & Attachment 4 (chart of test results with various formats); Tevanian, 11/4/98am, at 28:23 - 29:13 (" In that case what would happen is when a user was browsing the web, looking at web pages, and would find QuickTime content, files that were based on QuickTime, instead of playing using QuickTime, even if QuickTime was installed, Internet Explorer would play -- would try to play it using Microsoft technology and would often fail. So QuickTime was not being allowed to actually access the data and play it correctly. The user wouldn't know it was broken, and often the web page would show that it required QuickTime, yet QuickTime would not be invoked after release -- excuse me, after being installed. And we had no way to solve this that we knew of.").
+    Schaaff testified that, when Microsoft introduced Internet Explorer 3.0, it promoted its compatibility with the Netscape browser plug-in APIs. Since QuickTime already supported the Netscape browser plug-in API, Apple was able to ensure that QuickTime was generally compatible and operated properly with both Navigator and Internet Explorer 3.0. With the release of Internet Explorer 4.0, certain file types that were previously routed to QuickTime were no longer routed to QuickTime. Apple's investigation revealed that the mechanism for routing media types in the Windows operating system, the Windows registry, which is largely undocumented, was not routing media types to QuickTime as expected. Depending on the file type, this can result in the user not being able to access the content at all or in an impaired manner. Schaaff, 1/13/99, at 211:16 - 222:5; Tevanian Dir. ¶¶ 102-106. Apple's efforts to reverse engineer the Windows registry software to correct the problem met with only limited success. Tevanian Dir. ¶ 105.
+    Dr. Tevanian testified that the introduction of incompatibilities could undermine the establishment of Apple's multimedia platform. Tevanian, 11/4/98am, at 45:3 - 46:12. It is also clear that these problems were occurring at the same time as Microsoft's public campaign to convince developers that Microsoft's multimedia technology would "kill" QuickTime on the Windows platform. Tevanian, 11/5/98am, at 94:3 - 95:17.
+    Microsoft email confirm that "support for the Windows file types are build (sic) into IE itself," that the Windows registry gives a preference to Microsoft's ActiveX controls, and that Microsoft discouraged Apple from writing its own ActiveX controls to route playback of both of Microsoft formats and industry standards like MIDI. GX 911; GX 274.
+
+81.2.2. When Apple first requested Microsoft's assistance, Microsoft corrected one of the problems caused by its redesign because doing so suited its strategic objective of blunting other platform-level threats.
+
+    In August 1997, Dr. Tevanian sent Bill Gates an e-mail explaining that Internet Explorer 4.0 disabled QuickTime and QuickTimeVR on Windows and that IE4 set the default for ".mov" media files to Microsoft's ActiveMovie, rather than QuickTime. GX 265 (8/8/97 Tevanian email to Gates).
+    Unbeknownst to Dr. Tevanian, Mr. Gates forwarded Tevanian's e-mail to Paul Maritz. Mr. Gates sought to ensure that the problem was used to Microsoft's advantage; he instructed Mr. Maritz: "I want to get as much mileage as possible out of our browser and JAVA relationship here. In other words a real advantage against SUN and Netscape. Who should Avie be working with? Do we have a clear plan on what we want Apple to do to undermine SUN?" GX 265 (8/8/97 Gates email to Maritz).
+    Dr. Tevanian testified that Microsoft responded to his request to Gates by fixing the file associations for the specific file type he mentioned. Tevanian, 11/4/98am, at 29:14-22, 54:9-22.
+    Internal Microsoft email confirm that Microsoft provided a method that overrode the ActiveX preference for MOV and QT, (MOV is the format Dr. Tevanian asked Gates about), but that Microsoft did not wish to do this for any other file formats. GX 911 (8/5/98 Perry email; 8/6/98 Larkin email); GX 265 (8/8/97 Tevanian email to Gates).
+
+81.2.3. By contrast, when Apple rejected Microsoft's proposal to allocate multimedia technology, Microsoft abandoned meaningful efforts to help Apple solve the compatibility problems.
+
+    Dr. Tevanian testified that he could not understand why MS could and did correctly fix the .mov problem, but not the other problems. Tevanian, 11/4/98am, at 31:9 - 32:9, 54:9-22.
+    Dr. Tevanian also testified that Microsoft delayed responding to Apple's complaints. Tevanian, 11/4/98am, at 29:14-22 ("We contacted Microsoft. In fact, I recall at that time, the first time we noticed this, I contacted Bill Gates directly and asked him to fix it in one specific area, which he did. He got it fixed somehow. But in many other areas, it never got fixed. We tried to interact with Microsoft. We were getting close to shipping QuickTime 3. We weren't getting fast-enough responses. We did try to solve it ourselves. We couldn't solve it. And that was the end of that story."); Tevanian, 11/5/98pm, at 77:8-15 ("our engineers questioned the data they received from Microsoft. Here we are now, again, in context, a full year -- in fact, it's almost a year to the date after which I first notified Mr. Gates that we were having problems, and with that notification, Microsoft was somehow able to fix one of the file types, and we just could not understand why if they fixed one of them they didn't fix all of them.").
+    Dr. Tevanian testified that, after trying for months to obtain information or assistance from Microsoft to correct the problems and receiving an inadequate response, Apple received the beta for the Windows Media Player a few days before the final product was to ship, a grossly insufficient amount of time to detect and correct any problems that might exist. Tevanian, 11/4/98am, at 36:22 - 38:10.
+    Contemporaneous documents confirm Apple's repeated attempts to persuade Microsoft to correct the problem with Windows taking over the QuickTime file associations. For example, on July 21, 1998, Tim Schaaff sent a lengthy e-mail to Engstrom and Cristiano Pierry at Microsoft detailing the problems, and noting that the fixes Microsoft claimed to have provided Apple did not solve the problems. Schaaff explained in part that: "To the extent that Internet Explorer 4 relies on this undocumented info from the Windows Registry to determine which software should be invoked to process different MIME types on the web page, third-party developers, like Apple, are getting hurt. . . . It's unacceptable that every time a new version of the Media Player, or Direct X, or Windows itself is installed that QuickTime is getting overridden by your software." GX 272. A week later, having received no response, Schaaff resent this mail. GX 272 (7/28/98 Schaaff email)
+    Another week later, on August 4, 1998, still having received no response, Apple CEO Steve Jobs again requested Microsoft's assistance to solve the file association problem. GX 911 (8/4/98 Jobs email to Maffei).
+    On August 5, 1998, Microsoft's Pierry finally responded, suggesting only that Apple develop an ActiveX control, a Microsoft proprietary technology, but at the same time discouraging Apple from doing so. GX 272.
+    In an internal Microsoft e-mail to Jim Allchin, Pierry explained Microsoft's conduct. First, he noted that the reason that QuickTime is able play .mov files was because Microsoft had gone out of its way to provide an overwrite method. GX 911. 8/5/98 Pierry email) Pierry stated, "I really do not want to provide a similar mechanism to enable them to" play other file types. GX 911. Pierry then explained that his "response to Apple right now is sorry, but support for the Windows file types are build (sic) into Internet Explorer itself. The only way to take over, and we discourage you from doing so, is to write your own active x control. It turns out that they can probably just delete our MIME types from the registry, then IE would have to use the plug-in. But this would be a very wrong thing for them to do and it would cause app compatibility problems for them." GX 911 (8/5/98 Pierry email) (emphasis added).
+    None of the email traffic with Apple mentions the undocumented "enable plug-in flag" which Microsoft wrote to enable .mov and .qt to play properly Engstrom, 2/24/99am, at 12:21-25. Nor does e-mail traffic mention the alleged defects in Apple's plug-in instruction that Microsoft proffered at trial as the cause of the problem. Engstrom, 2/24/99am, at 20:25 - 21:20.
+
+81.3. Microsoft also retaliated against Apple by inducing third parties not to support QuickTime on Windows.
+
+    Tevanian testified that a third party hardware vendor TrueVision was prohibited by Microsoft from marketing or promoting driver software for QuickTime for Windows, and from writing driver software for QuickTime for Windows that would operate with more than the Final Cut product. Tevanian Dir. ¶¶ 134-138; Schiller Dep., 1/13/99, at 243:15 - 247:12.
+    Engstrom admitted that Microsoft entered into a contract with TrueVision that prohibited TrueVision from developing or promoting non-Microsoft interfaces for its driver software for approximately four months. Engstrom Dir. ¶ 120.
+
+e. Just as with Netscape, Microsoft's proposal was unrelated to any efficiency-enhancing sharing of technology
+
+82. Microsoft's effort to force Apple to exit the playback market for Windows was unrelated to achieving any efficiency or proconsumer benefit.
+
+82.1. First, Microsoft asserts that it was simply seeking a way to increase consumer satisfaction by providing uniform standards for multimedia. Engstrom Dir. ¶ 46-47. But forcing Apple to exit the playback market on Windows was not reasonably necessary to achieve workable standards, which could have been achieved through cross-licensing codecs (and other software) and/or cooperation on standards and protocols for data creation, storage and transfer, while maintaining the consumer benefits and innovation that competition provides.
+
+    Tevanian testified that, through cross-licensing, Microsoft and Apple could "establish a level playing field where everyone can compete. We viewed it as important to have open standards where customers could buy technology and vendorscould have different implementations of the technology." Tevanian, 11/5/99am, at 60:4-13.
+    Tevanian explained that a "single approach" has benefits but ending competition was not necessary to achieve them: "we have a different view of how to achieve that than Microsoft does. In particular, we view the way to achieve that is to establish open standards where everyone can compete with different implementations, and they could compete based on the quality of the implementations or other metrics that would be important to consumers. In the Microsoft model, the goal was to control it, so not only would they control the interfaces, but they would control the implementations. . . . So while it may have appeared to have benefitted consumers, the way they were proposing to achieve it we did not agree with." Tevanian, 11/5/99pm, at 31:8 - 32:11.
+    Timothy Schaaff testified that Apple personnel - redacted - DX 2586; Schaaff Dep., 8/28/98, at 508:7 - 512:10 (DX 2586A) (sealed). Mr. Schaaff also testified about discussions internally and with Microsoft about other arrangements with potential benefits for consumers that did not depend on eliminating competition in the playback market. DXs 2586; Schaaff Dep., 8/28/99, at 337:19 - 338:15 (DX 2586) (licensing codecs) (sealed), 353:15 - 354:3 - redacted - 361:18 - 365:2 (same).
+    In its June 15 written proposal, Microsoft listed a number of items, such as cross licensing codecs, that would have improved compatibility and interoperability issues but do not inherently require that the two firms agree to cease competition. GX 912.
+
+82.2. Second, the contemporaneous evidence demonstrates that, far from seeking to benefit consumers by improving the ensuring compatibility, Microsoft's overriding objective was to control the APIs to which developers write.
+
+    See supra ¶ 78.
+    Engstrom wrote that it was important to convince Intel not to assist Sun in writing Java multimedia APIs, "esp. those that run well, ie native implementations, on Windows." GX 235.
+    Microsoft told Intel that it sought to eliminate platform-level threats through a strategy of "embracing" the platform-level standards, "extending" them in Microsoft-dependent ways, and thereby "extinguishing" the threat to Microsoft's control over standards. See supra Part V.A.3; ¶ 91
+    See infra ¶ 84.
+
+83. Engstrom's testimony (Engstrom Dir. ¶ 49) that he never told Apple that it would have to give up its runtime on Windows is not credible.
+
+83.1. Engstrom's testimony is contrary to the more reliable testimony of Schaaff and Schiller, as well as inconsistent with the contemporaneous documents.
+
+    See supra ¶¶ 78.2, 79.2
+    Microsoft's David Cole clearly expressed to Mr. Gates and Mr. Engstrom that eliminating Apple's QuickTime runtime was Microsoft's ultimate goal: "If we can get Apple to give up on having a runtime on Windows . . . ." GX 270.
+
+83.2. Engstrom ultimately conceded that Apple would have little incentive to develop a runtime if it accepted Microsoft's offer.
+
+    Engstrom testified that "none of the presentations . . . were predicated on the fact that they would have to stop" offering a QuickTime runtime on Windows (Engstrom, 2/24/99am, at 51:22-24) but later conceded that if Apple adopted the Microsoft runtime, "they are going to have to, at some level, give up, mentally and emotionally, on building this duplicative set of services because it wouldn't make sense . . . ." Engstrom, 2/24/99am, at 55:6-23. What Mr. Engstrom appears to mean by duplicative is competitive. Engstrom, 2/24/99am, at 51:14-21; 35:24 - 36:13.
+
+2. Microsoft also attempted to divide markets with RealNetworks, using the same carrot and stick approach it used with other potential platform rivals
+
+84. Microsoft engaged in a similar attempt to divide markets with RealNetworks as part of its pattern and practice of seeking anticompetitive agreements to eliminate potential threats to the applications barrier to entry.
+
+84.1. Microsoft perceived that RealNetworks (then known as Progressive Networks) multimedia streaming software had the potential to develop into a platform threat, at least in the multimedia area.
+
+    On June 5, 1997, Microsoft's Jim Durkin reported on an internal Microsoft strategy meeting attended by Messrs. Gates, Maritz and Muglia. GX 1576 (6/5/97 Durkin email). Durkin quoted Microsoft Vice-President Muglia as saying: RealNetworks "is like Netscape. The only difference is we have a chance to start this battle earlier in the game." GX 1576. Durkin also reported that Gates and Maritz had made the decision that "Winning the streaming battle means three things - winning the file format war, winning the client architecture war, and winning the server wars." GX 1576.
+    Mr. Maritz testified that, as of June 1997, Gates believed that streaming was a strategic area that Microsoft needed to win. Maritz, 1/27/99am, 56:25 - 57:10; GX 1576.
+    Mr. Maritz also admitted that, although he believed in June 1997 that RealNetworks did not pose the same sort of threat as Netscape, it "had the potential to grow, over time, into a software platform.@ Maritz, 1/27/99am, 57:15 - 58:4.
+    Mr. Engstrom testified that RealNetworks presented some set of APIs that compete with Microsoft's APIs for developer attention (Engstrom, 2/23/99pm, at 35:24 - 36:10; 83:21 - 84:6) and that RealNetworks technology operates cross platform (Engstrom, 2/23/99pm, 98:3-25).
+
+84.2. Microsoft told RealNetworks that it viewed the "core" multimedia streaming functionality on the client as part of the operating system and requested that RealNetworks cease competing with Microsoft in offering that functionality.
+
+    Bruce Jacobsen, Chief Operating Officer of RealNetworks and a former Microsoft employee, testified that he met with Microsoft Vice-President Robert Muglia in the summer of 1997, to discuss, among other things, Microsoft's distribution of RealNetworks software with Windows and Internet Explorer. Jacobsen Dep., 1/13/99, at 153:2 - 158:25; cf. GX 1369 (sealed) (7/18/97 Agreement between Progressive Networks and Microsoft); GX 884 (sealed) (6/17/97 agreement between Progressive Networks and Microsoft).
+    Mr. Jacobsen recorded a summary of the meeting shortly after the meeting. GX 1368. Mr. Jacobsen summarized the meeting as follows: AWas cordial but pointed. His basic message was the [sic] wanted us out of core AV. He said that MSFT had concluded that fundamental datatypes like words and numbers were in essence a core part of the operating system . . . He said that he thought video was one of the most exciting datatypes -- since monitors were visual things, video had to be though [sic] like 'words'. and microsoft had to control this franchise. He said that anyone who competed against MSFT in the operating system 'lost' -- that there were only two people left in town who still competed against msft as a potential OS vendor -- Sun and Oracle -- and the rest had been obliterated, and MSFT was targeting these last two. He referenced their scalability day as part of killing Sun. So the message was that if we wanted to do value add on top of their video, fine; if not, we were an OS contender and msft would target us for obliteration. He cited PeopleSoft as ok -- he said adobe had pretensions of OS, but had basically backed off.@ GX 1368.
+
+84.3. In order to induce RealNetworks to cease competing in core streaming, Microsoft proposed that, if RealNetworks stopped competing in base level streaming, Microsoft would give its full support to RealNetworks as a value-added software provider; but if RealNetworks continued to compete, Microsoft would use its resources to injure it.
+
+    Mr. Jacobsen testified that Muglia explained that Microsoft would seek to injure RealNetworks' business if RealNetworks continued to compete in the fundamentals of audio/visual streaming. Jacobsen Dep., 1/13/99, at 155:4 - 158:25. Mr. Jacobsen quotes Muglia as saying that Microsoft had won most of the operating system wars and the only remaining threats were Oracle and Sun. Jacobsen Dep., 1/13/99, at 156:22 - 157:4. Muglia said Microsoft was trying "to reduce the economic viability of those companies so they wouldn't have the wherewithal to invest and position themselves as operating system competitors of Microsoft." Jacobsen Dep., 1/13/99, at 156:22 - 157:4. Muglia told Jacobsen that a company like Adobe had at one point "operating system pretenses" or "pretensions" but had been chased out of that space. Jacobsen Dep., 1/13/99, at 157:5-10. Muglia told Jacobsen that Microsoft wanted RealNetworks to be like PeopleSoft, a value-added provider that builds applications on top of operating systems but does not threaten any core part of Microsoft's environment. Jacobsen Dep., 1/13/99, at 157:11 - 158:8. Muglia continued: "On the other hand, if you try to do the fundamentals of streaming audio and video, then we would view you as a core competitor and use all our resources to hurt you in your core businesses. " Jacobsen Dep., 1/13/99, at 157:18-22; 158:9-25 (Jacobsen asked Muglia whether Microsoft was asking RealNetworks to abandon core streaming audio and video and Muglia replied affirmatively).
+    Mr. Muglia warned RealNetworks, Jacobsen testified, that "Microsoft would aggressively target us as a company, using all of Microsoft's resources, if we stayed in the audio and video space . . . . Bob also said, and I agreed with him, that Microsoft had been successful prior in targeting companies and having severe economic effects on them. Bob did not use Borland as an example, but Borland certainly popped to my mind . . . . The phrase that runs through the industry is that Microsoft performed a cashectomy on Borland, that it lowered the prices of its product, which caused severe disruptions in Borland's cash flow and also in the stock price, which caused Borland to take a series of significant steps, including disposing of some products which historically had been significant competitors to Microsoft products . . . . The example he did use of Adobe . . . where Microsoft had had a very significant effort and success in changing the destiny of a company . . . . So, there was very clear message that they wanted us to leave the space, and that there would be consequences if we didn't. Jacobsen Dep., 1/13/99, at 161:20 - 163:1.
+    GX 1368 (quoted above).
+    Muglia Supp. Dir. ¶ 26 (Muglia denies mentioning PeopleSoft, but admits citing SAP, another software company that builds on top of, but does not compete with, Windows, as a model for what Microsoft expected from RealNetworks).
+
+        Steven McGeady testified: "The hardware vendors . . . both at the time and now, continue to be frustrated . . . because they had more ideas about new ways and interesting ways to do things that would have benefit for the end user than they were able to get pushed up through the operating system layers." McGeady, 11/9/98pm, at 47:4-10; see also McGeady, 11/9/98pm, at 45:13 - 47:20 (detailing the benefits NSP offered consumers); McGeady, 11/9/98am, at 36:2 - 41:8 (explaining how alternate platform-level interfaces can foster innovation and deliver greater performance to consumers); GX 563 (4/13/95 Holzhammer email explaining that if Microsoft controls all driver level software, "innovation at the HW level would grind to a halt since silicon vendors would need to rely on MS to get driver support for their new stuff.").
+        McGeady further testified: "The more competitive and diverse a software environment - application development environment is, the more innovation occurs and the more different options are presented to consumers. Correspondingly, as the software environment has become more of a monoculture around Microsoft, the rate of innovation appears to be slowing, and the number of different and varied options presented to the consumer is diminishing." McGeady, 11/9/98pm, at 61:24 - 62:7.
+        Professor Fisher testified that Microsoft's pervasive control over innovation harms consumers because, if "we're going to live in a Microsoft world" that "may be a nice world, but it's not a competitive world, and it's not a world that's ultimately consumer-driven." Fisher, 1/7/99am, at 27:11 -28:17. "Microsoft has been giving out very, very, strong signals that innovation is fine and they will cooperate with it. They will even assist it, if what you're doing is producing simply complements for Microsoft products. But they will take very, very aggressive action against you if what you're doing is producing innovations that might lead to something that threatens their operating system monopoly. . . . It rather discourages, I should think, people from thinking of ways to . . . innovate in ways that would threaten" Microsoft's operating system monopoly. Fisher, 6/2/99am, at 25:7-26:3.
+        With regard to Intel, Netscape's Marc Andreessen wrote: "if they only have Microsoft as a single channel to innovate on the PC platform, then Microsoft controls the rate of innovation and slows things down to suit Microsoft's interests, which is not in Intel's best interest." DX 1619 (9/18/95 Marc Andreessen email to other Netscape executives).
+
+    354. Microsoft's efforts to blunt Intel's platform-level software also eliminated a potential threat to Microsoft's control over APIs, and thus a potential threat to its monopoly power, and deterred other threats from arising in the future.
+        Intel abandoned NSP's platform-level aspects because of pressure from Microsoft. See supra ¶ 350.
+        Professor Fisher testified: "Microsoft has given signals to the world, both through these [its actions with regard to browsers and Java] and through its actions as regards Apple and Intel, Microsoft cares a lot about whether there are going to be innovations that might, in one way or another, present a platform threat; and that if you want to make innovations in that direction, you're going to have to deal with Microsoft in a very, very serious way. That is also a way of blunting or preventing future platform threats." Fisher, 1/12/99pm, at 22:10-18; see also Fisher, 6/2/99am, at 25:7 - 26:3 (expanding on same concept).
+
+    5. Microsoft's contention that technical considerations explain its objections to NSP is pretextual, and the testimony of its witnesses regarding NSP is not credible
+
+    355. Microsoft argued that it objected to NSP because it was originally designed for Windows 3.1 and thus would slow the adoption of, or could at some point cause technical problems with, Windows 95 (Maritz Dir. ¶¶ 316-322). But this argument cannot explain Microsoft's conduct.
+
+    355.1. First, contemporaneous Microsoft documents make clear that Microsoft's overriding objection to NSP software was its platform-level attributes, rather than the fact it was initially designed to work only with Windows 3.1 or any technical issues.
+        Early records of Microsoft's reaction to NSP show that Microsoft's major problem with NSP was not the technical merit of the software, which Microsoft had not at that point evaluated, but rather that Intel was entering Microsoft's "OS space," which conflicted with its goal of owning "ALL driver software 'to the metal', i.e., silicon. . . ." GX 563.
+        Microsoft's Paul Osborne candidly explained: "Microsoft doesn't want Intel to be in the system software business for the very same reason -- we don't want the operating system to be a commodity." GX 921, at MS98 0168650 (Osborne 5/15/95 email) . For that reason, Osborne wrote, it was important to "neutralize this situation with Intel" regardless whether it was "Good code or bad, competitors or not." GX 921, at MS98 0168650 (Osborne 5/15/95 email); see also GX 921, at MS98 0168652 (5/10/95 Stork email expressing dissatisfaction that NSP would allow Intel to "put in new function without dependency on us").
+        Microsoft's David Cole did not mince words on this subject of making advances in hardware: Intel "feels the need to write system extensions to do this. We don't want em to." GX 921, at MS98 0168652 (5/10/95 David Cole email).
+        After Intel had agreed to cease promoting the NSP APIs and DDIs, Paul Maritz explained that he was now giving Intel "the benefit of the doubt" because "they have given on our original major objections, which were that they were trying to establish middleware APIs, and that they were using NSP to jam all sorts of random, unrelated stuff. Now they are just purveyors of big, slow software." GX 1309 (7/28/95 Maritz email) (emphasis added).
+
+    355.2. Second, Microsoft's contention is pretextual because technical concerns about NSP cannot explain either (i) Microsoft's threats relating to Intel's next generation of microprocessors or (ii) Microsoft's insistence that Intel not compete in platform software even after Intel had abandoned NSP for Windows 3.1.
+        See supra ¶ 351.1.
+        See supra ¶ 351.
+
+    355.3. Third, Microsoft's contention that encouraging Windows 95's adoption justified its efforts to kill NSP is belied by Microsoft's own continued support of Windows 3.1.
+        Microsoft continues to offer Windows 3.1. E.g., GX 1188 (sealed) - redacted -
+        Dr. Warren-Boulton testified that continuing to support older versions of Windows is "a normal profit-maximizing thing" for Microsoft to do. Warren-Boulton, 11/19/98am, at 64:7-17.
+
+    355.4. Fourth, Microsoft's contention that it simply had technical objections to NSP is belied by the fact that Microsoft insisted that Intel abandon NSP's platform-level efforts even though Intel was prepared to solve any technical problems and to offer a Windows 95 version.
+
+    355.4.1. Intel had developed by June 1995, and was about to begin testing, a beta version of NSP for Windows 95 and, absent Microsoft's predatory efforts to block it, likely could have solved any remaining technical issues.
+        In June 1995, Intel had a running beta version that was about to begin the quality assurance testing process. McGeady, 11/10/98pm, at 24:5 - 25-11.
+
+    355.4.2. PC OEMs would not have installed Windows 95 and NSP for Windows 3.1 on the same machines.
+        NSP could be installed only by OEMs (McGeady, 11/10/98pm, at 25:17 - 26:4), who have every incentive to ensure that the software they select properly functions, as that reduces their support expenses. See supra V.C.1.b.(1); ¶ 178.1; McGeady, 11/10/98pm, at 55:3 - 56:1.
+
+    355.4.3. To the extent that potential risks may have arisen with subsequent customer upgrades to Windows 95, there are a number of means that Intel, the OEMs and Microsoft commonly employed to deal with potential problems with upgrades. There is no reason to believe that NSP presented unsolvable or unusual difficulties.
+        Since OEMs would not preinstall NSP on a Windows 95 PC (until Intel released the Windows 95 version of NSP), the only scenario that could potentially pose a compatibility problem is that a customer with an NSP/Windows 3.1 PC might later decide to install a retail version of Windows 95 or Windows NT on the PC (McGeady, 11/10/98pm, at 25:17 - 26:4). McGeady testified about several methods commonly employed to deal with problems of this type (McGeady, 11/10/98pm, at 35:20 - 36:22; 37:7-16), that Intel and the OEMs had arrangements for technical support for NSP (McGeady, 11/10/98pm, at 38:15 - 39:5; 55:9 - 56:1), and that NSP did not present unusual risks compared to other PC software and device drivers (McGeady, 11/10/98pm, at 40:7-24).
+
+    356. Testimony offered by Paul Maritz and Bill Gates regarding Microsoft's efforts to induce Intel to cease developing platform-level software is either unreliable or incredible.
+
+    356.1. Mr. Maritz' testimony that Microsoft simply told Intel what was in Intel's best interest (Maritz, 1/27/98am, at 28:17 - 29:22, 34:15 - 25) and that the discussions regarding NSP were merely a benign part of an ongoing dialogue resulting from the close relationship between the companies' products (Maritz Dir. ¶¶ 308-309) is not credible.
+        The threat Microsoft made to Intel at the August 2, 1995, meeting was not a procompetitive, routine discussion between producers of complementary products; it was, rather, a blunt warning that Intel should not continue to pursue developments that could threaten Microsoft's monopoly power. See supra ¶ 351.
+        The contemporaneous documents explicitly show that Maritz offered to stop "selling against" Intel if Intel held "off on pushing OEMs to install NSP." GX 923.
+        By contrast to the picture he painted at trial, the documents Maritz authored in the course of his work make clear that Microsoft's principal concern with NSP was the possibility that Intel might control a new set of "middleware APIs." GX 1309 (7/28/95 Maritz e-mail).
+
+    356.2. Mr. Maritz' testimony that, after Intel agreed to limit its distribution of NSP with Windows 3.1 in return for certain Microsoft assistance regarding Windows 95, Intel later withdrew NSP "without further communication, to my knowledge, from Microsoft" (Maritz Dir. ¶ 322) is inconsistent with the contemporaneous evidence of further Microsoft/Intel communications.
+        Gates wrote to Maritz and other top Microsoft executives that Andy Grove "believes Intel is living up to its part of the NSP bargain" and asked the recipients to let Gates know if "Intel is not sticking totally to its part of the deal." GX 281 (10/18/95 Gates email).
+
+    356.3. Mr. Gates's testimony that Microsoft did not express concern to Intel about Intel's platform-level software development work and that Gates did not even know about Intel's software development work (Gates Dep. (played 11/9/98am), at 69:8-19) is not credible in light of both Steven McGeady's testimony and the contemporaneous evidence.
+        McGeady testified that Intel had briefed Microsoft and Gates on its Internet software effort several times and that he had personally briefed Gates at the August 2, 1995 meeting. McGeady, 11/9/98pm, at 8:3-13; 9:7 - 10:19.
+        Gates himself wrote on July 7, 1995, that Intel had an Internet software group of 100 people working under McGeady. GX 278 (7/7/95 Gates e-mail).
+        Whittier's minutes of the August 2, 1995, meeting reflect that Gates warned Intel against supporting Netscape or Java as a alternate platform or stepping on any of Microsoft's key Internet strategies. GX 279.
+
+    356.4. Mr. Gates' testimony that Microsoft did not threaten to withhold support for Intel if Intel failed to cooperate with Microsoft (Gates Dep. (played 11/9/98 am) at 70:22 - 73:10) is also not credible in light of the evidence.
+        See supra ¶ 351 (summarizing McGeady's and Sullivan's testimony and Whittier's minutes (GX 279) regarding the August 2, 1995, meeting).
+        In discussing Intel's request that Microsoft tell OEMs that some of Intel's software is okay to install, Gates asked his executives to let him know if "Intel is not sticking totally to its part of the deal." GX 281.
+
+     
+    FOOTNOTES
+
+    1. GX 1129, at MSV 0005245 (Packard Bell); GX 647, at MSV 0002127 (Toshiba) (sealed); GX 1183, at MS98 0009095 (Hewlett-Packard) (sealed); GX 1374, at MS98 0009538 (Hitachi) (sealed); GX 458, at MS98 0009146 (Gateway (sealed); GX 1375 (Sony) (sealed); GX 1060, at MS98 0009311 (AST) (sealed); GX 1373, at MS98 0009399 (Micron) (sealed).
+
+    2. See, e.g.,Warren-Boulton Dir. ¶ 103 (outlining typical terms); GX 1213, at MS6 5000388 (sealed) (AT&T Agreement, § 3.3); GX 1148, at MS6 5001000 (sealed) ( Prodigy Agreement, §§ 3.3, 3.4); GX 1134, at MS6 5000172 (CompuServe Agreement, § 3.3); GX 804, at AOL 0001738 (AOL Agreement, § 7.2); Myhrvold 2/9/99pm, at 77:14-19 (conceding Microsoft's contracts restricted the distribution of other browsers); Myhrvold 2/10/99am, at 6:14-22 (admitting that his testimony that Microsoft imposed distribution restrictions was "absolutely wrong" was itself wrong); Chase Dir. ¶ 95 ("Although the particulars vary somewhat from OLS to OLS . . . [their agreements] are similar in many ways to Microsoft's agreement with AOL.").
+
+    3. See, e.g., Fisher Dir. ¶¶ 184-185 (detailing typical terms of ISP agreements); GX 1141, at MS6 5000007 (sealed) (Earthlink agreement, § 3.1); GX 1140 (summary of the Brigadoon agreement); GX 1147 (summary of the IDT Corp. agreement); GX 1144,at MS6 5001130 (sealed) (SpryNet agreement, § 3.1); GX 1146, at MS6 5000924 (sealed) (Mindspring agreement, § 3.1); GX 1213,at MS6 5000388 (sealed) (AT&T agreement, § 3.3); GX 1214,at MS6 5000953 (sealed) (Netcom Agreement, § 3.1).
+
+    4. GX 1163, at CNET 000032 (7/14/97 MS/CNet ICP agreement, section 2.3); GX 1164, at p. 4 (7/15/97 MS/CondeNet ICP agreement, section 2.3); GX 1175, at AOL-0000149 (9/10/97 MS/AOL agreement, section 2.3); GX 859, at AOL-0000123 (AOL Summary of MS Active Desktop Agreement, dated 9/23/97, at AOL 0000149); Colburn Dir. ¶ 42; Colburn, 10/29/99pm 51:8 - 54:24 (explaining active desktop restrictions); GX 1156, at INT 00005 (6/6/97 MS/Intuit agreement, section 2.2); GX 206 (internal Microsoft email from Will Poole to Brad Chase, dated 4/17/97, in which Poole summarizes terms of Intuit agreement); GX 1176, at TWDC 0710 (7/3/97 MS/Disney agreement, section 2.3-2.5); GX 874, at TWDC 0299-300 (Disney Online and Microsoft Active Desktop Agreement Summary of Terms); GX 856, at MS98 0100299 (7/3/97 MS/Disney agreement, sections 2.3-2.4); Barksdale Dir. ¶ 182 (Disney prohibited from offering Netscape compensation of any kind); GX 776 (Wadsworth Decl. ¶5); GX 1163, at CNET 000032 (7/14/97 MS/CNet agreement, very similar to Intuit, section 2.3); GX 855, at WD 0004 (7/1/97 MS/Wired agreement, section 2.3); GX 1210, at p.4 (7/9/97 MS/Sportsline agreement; MS to put icon for Sportsline on sports channel, section 2.3); GX 1209, at p.4 (7/25/97 MS/MTV agreement; MS to put MTV icon in entertainment channel, section 2.3); GX 1211, at ZD 0005 (8/6/97 MS/ZDNet agreement; MS to put ZDNet icon in appropriate subchannel, section 2.3); GX 1170, at p.4 (8/15/97 MS/NBC agreement, section 2.3); GX 1174, at MS98 0100073 (sealed) ( , section 2.3); GX 1159, at TM 000057 (6/26/97 Hollywood Online agreement, section 2.3); GX 1164, at p.4 (7/15/97 MS/CondeNet agreement, section 2.3); GX 1165, at TWDC 0372 (7/17/97 MS/ESPN agreement, section 2.3); see also Fisher Dir. ¶ 195 (summarizing restrictions); Warren-Boulton Dir. ¶ 115 (same).
+
+	 
+Updated September 19, 2023
+
+    envelope icon
+
+    Antitrust Division
+    U.S. Department of Justice
+    950 Pennsylvania Avenue NW
+    Washington DC 20530
+
+    smartphone icon
+
+    Sections and Offices
+
+    Antitrust Division Archive
+
+    smartphone icon
+
+    Signup for Email Updates
+    Social Media
+    Subscribe to News Feeds
+        twitter icon youtube icon linkedin icon 
+
+U.S. Department of Justice logo
+
+    About
+    Budget & Performance
+    Archives
+    FOIA
+
+    Accessibility
+    Legal Policies & Disclaimers
+    Privacy
+    For Employees
+
+    Office of the Inspector General
+    No FEAR Act Data
+    Vulnerability Disclosure
+
+    Multilingual
+    Vote.gov
+
+Have a question about Government Services?
+
+    Contact USA.gov
+
+Return to the top of the page. Top
+

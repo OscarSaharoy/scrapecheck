@@ -1,0 +1,53 @@
+<style>
+.sidebar-menu ul li.active { background: #f0f0f0; font-weight: bold; }
+</style>
+<div id="main-nav" role="navigation" aria-label="Primary Menu">
+  <ul>
+    <li><a href="/" data-ga="nav_home">HOME</a></li>
+    <li class="has-children"><a href="/about">About Us</a>
+      <ul>
+        <li><a href="/about/story">Our Story</a></li>
+        <li><a href="/about/team">Team</a>
+          <ul>
+            <li><a href="/about/team/careers" rel="nofollow">Careers 🧑‍💼</a></li>
+            <li><a href="/about/team/press">Press &amp; Media</a></li>
+            <li><a href="/about/team/testimonials"><svg height="10" width="10"><circle cx="5" cy="5" r="5" fill="gold" /></svg> Testimonials</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="/services" onclick="trackClick('services')">Services</a>
+      <ul>
+        <li>Web Design <span class="promo">SALE!</span></li>
+        <li>App Development <span class="platform">iOS, Android🤖</span></li>
+        <li>SEO Optimization
+          <ul>
+            <li>Keyword Research</li>
+            <li>On-Page SEO</li>
+            <li>Link Building<script>console.log('wtf');</script></li>
+            <li>Reports + Analytics</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<!-- Tracking pixel start -->
+<img src="https://analytics.example.com/pixel.gif?u=7238792" height="1" width="1" style="display:none">
+<!-- Tracking pixel end -->
+
+<div id="cookie-banner">
+  <p>We use cookies 🍪 <a href="/privacy" style="color:#00f;">Learn more</a></p>
+  <button onclick="acceptCookies()">Accept</button>
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="/terms">Terms of Service</a> | <a href="/privacy">Privacy Policy</a>
+  </div>
+  <small>© 2025 <span class="glitch">Compa█ny Na▓me</span> — All Rights Reserved</small>
+  <div style="display:none">debug: env=prod, build=7f42d3</div>
+</footer>
+<script>
+  if(!window.analytics) { var s=document.createElement('script'); s.src='/js/analytics.js'; document.body.appendChild(s);}
+</script>
