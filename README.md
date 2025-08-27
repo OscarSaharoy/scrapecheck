@@ -17,7 +17,7 @@ fitted model
 __pycache__     chars.txt       data            infer.py        model.pkl       README.md       train.py
 ```
 
-3. pipe text into `./infer.py` - you can see here, nice article text gives a score around 0.84, and non-article UI text gives around 0.14.
+3. pipe text into `./infer.py` - you can see here, nice article text gives a score closer to 1, and non-article UI text gives a score closer to 0.
 
 ```bash
 (.pyenv) [oscarsaharoy@LCCC-MB-pTIY21 ~/projects/scrapecheck] $ echo "
